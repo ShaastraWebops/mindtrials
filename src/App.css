@@ -1,38 +1,762 @@
-.App {
-  text-align: center;
+html{
+  margin: 0%;
+  padding: 0%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  box-sizing: border-box;
+}
+.body
+{
+  font-size: 1.1vw;
+  width: 100vw;
+  margin: 0%;
+  padding: 0%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+i {
+  z-index: 100;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.load-slide-left
+{
+  background-color: white;
+  position: relative;
+  /* position: absolute; */
+  width: 50vw;
+  justify-self: flex-end;
+  height: 100vh;
+  /* top: 0%;
+  left: 0%;
+  overflow-x: hidden; */
+}
+.load-slide-right
+{
+  background-color: white;
+  /* position: absolute; */
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+  justify-self: flex-start;
+  /* top: 0%;
+  right: 0%;
+  overflow-x: hidden; */
+}
+@keyframes slide-left{
+  100%{
+    transform: translateX(-100%);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@keyframes slide-right{
+  100%{
+    transform: translateX(100%);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+html::-webkit-scrollbar
+{
+  width: 15px;
+  border-radius: 25px;
+  padding: 0%;
+}
+html::-webkit-scrollbar-thumb
+{
+  border-radius: 25px;
+  background-color: rgb(23, 16, 53);
+}
+html::-webkit-scrollbar-track
+{
+  background-color: transparent;
+  border-radius: 25px;
+}
+
+/* header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 10vw;
+  align-items: center;
+  position: absolute;
+  z-index: 5;
+} */
+.sticky
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 8vw;
+  align-items: center;
+  position: absolute;
+  /* top: 0%;
+  left: 0%; */
+  z-index: 5;
+  position: fixed;
+  justify-content: space-between;
+  background-color: rgba(246, 246, 252, 0.945);
+  /* background-color: white; */
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:active, a:visited, a:hover
+{
+  text-decoration: none;
+  color: black;
+  transition: all 1s ease-in-out;
+}
+/* a:hover
+{
+  letter-spacing: 2px;
+} */
+
+h1
+{
+  font-size: 5vw;
+  letter-spacing: 2vw;
+  word-spacing: 3vw;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+#landing
+{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin: 0vw;
+  height: 100vh;
+  width: 100vw;
+}
+.landing
+{
+  box-sizing: border-box;
+}
+.landing h1
+{
+  color: rgb(34, 38, 73);
+  font-size: 10vw;
+  margin-bottom: 4vw;
+  margin-top: 8vw;
+}
+.landing p
+{
+  align-self: flex-end;
+}
+
+#aboutus, #events
+{
+  height: 100vh;
+  position: relative;
+  margin-top: 6vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  z-index: 4;
+  justify-content: center;
+  /* scroll-snap-align: start; */
+}
+.aboutus::before, .events::before
+{
+  background-image: url("./images/bg1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  opacity: 0.6;
+  content: "";
+  z-index: -1;
+}
+.aboutus h1, .events h1
+{
+  color: rgb(51, 34, 73);
+  font-weight: 700;
+}
+.aboutus-info
+{
+  display: flex;
+  width: 80vw;
+  flex-direction: column;
+  margin: auto;
+}
+
+.aboutus-info  div
+{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+}
+.aboutus-info h2, .events-info h2
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: 3vw;
+  letter-spacing: 1.5vw;
+  text-align: center;
+}
+.aboutus-info p, .events-info p
+{
+  margin-bottom: 4vw;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+.mt
+{
+  align-self: flex-end;
+}
+
+.shaastra, .bs 
+{
+ text-align: left;
+}
+
+
+.bs-wrapper-flex
+{
+  display: flex;
+  height: 450px;
+  width: 80%;
+  margin: auto;
+  overflow-y: scroll;
+}
+.three, .one
+{
+  margin-top: 50px;
+}
+.flip-card
+{
+  background-color: #ecd4e7;
+  width: 22vw;
+  height: 30vw !important;
+  perspective: 1000px;
+  padding: 0vw;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+.flip-card h2
+{
+  font-weight: 400;
+}
+.two .flip-card
+{
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #bee5df;
+}
+.three .flip-card
+{
+  background-color: #f1e5c3;
+}
+.flip-card-inner
+{
+  position: relative;
+  width: 22vw;
+  height: 30vw;
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner
+{
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back
+{
+  box-sizing: border-box;
+  position: absolute;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip-card-back
+{
+  transform: rotateY(180deg);
+}
+.bs-wrapper-flex::-webkit-scrollbar
+{
+  width: 6px;
+  border-radius: 25px;
+}
+.bs-wrapper-flex::-webkit-scrollbar-track
+{
+  background-color: transparent;
+}
+.bs-wrapper-flex::-webkit-scrollbar-thumb
+{
+  border-radius: 12px;
+  background-color: rgb(34, 38, 73);
+}
+
+.events-info
+{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+.events-info > div
+{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.events-info p
+{
+  width: 50%;
+}
+
+.theme-reveal p
+{
+  margin: auto;
+}
+
+.competition-pts div
+{
+  background-color: lightblue;
+  padding: 25px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  border-radius: 12px;
+  position: relative;
+}
+.competition-pts div:first-child:after, .competition-pts div:nth-child(2)::after, .competition-pts div:nth-child(3)::after
+{
+  height: 100%;
+  width: 10px;
+  position: absolute;
+  content: "";
+  border-left: 5px solid #7d748b;
+  top: 100%;
+  left: 50%;
+}
+
+.competition .button
+{
+  align-self: flex-end;
+  background-color: #f1cbe8;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.timeline-wrapper
+{
+  position: relative;
+  z-index: 1;
+  /* display: flex;
+  flex-direction: row !important;
+  justify-content: space-between; */
+}
+.timeline-wrapper::after
+{
+  z-index: -1;
+  content: "";
+  background-color: lightblue;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 65%;
+  overflow-x: hidden;
+}
+.timeline p:first-child
+{
+  height: calc(0.3 * 20vw);
+}
+.timeline p
+{
+  margin: 0%;
+}
+.timeline-date
+{
+  background-color: #f1cbe8;
+  text-align: center;
+  padding: 10px;
+}
+
+.partners
+{
+  width: 80%;
+  margin: auto;
+  padding-top: 6vw;
+}
+.partners .card 
+{
+  height: fit-content;
+  width: 20vw;
+  background-color: #ecd6e7;
+  padding: 20px;
+  display: flex;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+}
+.partners .flip-card, .partners .flip-card-inner
+{
+  height: fit-content;
+}
+.partners .swiper-slide
+{
+  text-align: center;
+  justify-self: center;
+}
+.partners .swiper-wrapper
+{
+  padding: 50px;
+}
+.partners .flip-card
+{
+  border-radius: 0%;
+  margin-right: 0%;
+  border-bottom: 6px solid rgb(23, 16, 53);
+}
+.prev .swiper-container
+{
+  width: 100%;
+}
+.prev .swiper-wrapper
+{
+  padding: 0;
+  width: 80vw;
+  margin:0;
+}
+.prev .swiper-slide
+{
+  /* background-position: center;
+  background-size: cover; */
+  width: 22vw;
+  height: 300px;
+  background-color: rgb(198, 219, 226);
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  padding: 20px;
+  justify-self: center;
+  border-radius: 25px;
+  margin-right: 0% !important;
+}
+
+.prev{
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: auto;
+  padding-top: 6vw;
+  margin-bottom: 10vw;
+}
+.prev h1:last-child{
+  align-self: flex-end;
+  text-align: right;
+}
+
+.contact
+{
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  height: 38vw;
+  overflow-x: hidden;
+}
+.contact-bg{
+  position: absolute;
+  top: 30%;
+  width: 110vw;
+  left: -5vw;
+  height: 500px;
+  z-index: -1;
+  content: "";
+  border-radius: 100% 90% 10% 10%;
+  background-color: rgb(34, 38, 73);
+}
+.contact > p
+{
+  /* margin: 10vw auto; */
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 5vw;
+  text-align: center;
+  width: 80%;
+  font-size: 2vw;
+}
+.contact > p:last-child
+{
+  text-align: center;
   color: white;
+  font-size: 1vw;
+}
+.follow 
+{
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  width: 30vw !important;
+  justify-content: space-between;
+  margin-bottom: 20px !important;  
+}
+.contact h1
+{
+  margin: auto;
+  margin-bottom: 2vw;
+  width: 80%;
+}
+.poc div
+{
+  color: aliceblue;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  font-size: 1.4vw;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+#particles-js
+{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  content: "";
+  width: 100vw;
+  z-index: -2;
+  overflow-x: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 1000px)
+{
+  .body, .aboutus-info p, .events-info p
+  {
+    font-size: 2vw;
   }
-  to {
-    transform: rotate(360deg);
+  header 
+  {
+    flex-direction: column;
+    justify-content: center !important;
+  }
+  .sticky
+  {
+    height: 20vw;
+  }
+  .header-image
+  {
+    width: 80vw !important;
+    margin: 0 auto;
+    padding: 0 !important;
+  }
+  .header-menu
+  {
+    width: 100vw !important;
+  }
+  .flip-card, .two .flip-card, .flip-card-inner
+ {
+   width: 40vw;
+   height: 50vw !important;
+ }
+  .competition-pts div 
+  {
+    width: 30vw;
+  }
+ .prev h2, .prev p
+  {
+    width: 80%;
+    margin: auto;
+  }
+  .contact
+  {
+    height: 100vw;
+  }
+  .contact-bg
+  {
+    top: 15%;
+  }
+}
+
+@media screen and (max-width: 550px)
+{
+  .body
+  {
+    font-size: 4vw;
+  }
+  .home-btns .css-1o65u5e
+  {
+    padding: 4vw;
+  }
+  header 
+  {
+    font-size: 2vw;
+  }
+  /* .header-image .image 
+  {
+    size: ;
+  } */
+  .aboutus-info p, .events-info p  
+  {
+    font-size: 4vw;
+    width: 80vw;
+    margin: auto;
+  }
+  .aboutus-info > div
+  {
+    width: 80vw;
+  }
+  h2, .partners h1, .prev h1, .contact h1, .flip-card-front
+  {
+    font-size: 8vw !important;
+  }
+  .partners h2, .contact p
+  {
+    font-size: 4vw !important;
+  }
+ .flip-card, .two .flip-card, .flip-card-inner
+ {
+   width: 90vw;
+   height: 100vw !important;
+ }
+ .bs-wrapper-flex
+ {
+   height: 200vw;
+   width: 90vw;
+ }
+ .flip-card
+ {
+   text-align: center;
+ }
+ .survey-div > .css-1ialerq
+ {
+   flex-direction: column;
+ }
+ .survey-div .chakra-image 
+ {
+   width: 40vw;
+   height: 40vw;
+   margin: 20px 0;
+   justify-self: center;
+   align-self: center;
+ }
+ .competition-flex 
+ {
+   flex-direction: column;
+   align-items: center;
+ }
+ .competition-pts
+ {
+   height: 100vw;
+ }
+ .timeline-wrapper
+ {
+   flex-direction: column;
+   text-align: center;
+   margin-top: 20px;
+ }
+ .timeline-wrapper::after
+ {
+   background-color: transparent;
+ }
+ .timeline-date, .timeline
+ {
+   width: fit-content !important;
+   align-self: center;
+ }
+ .partners .card
+ {
+   width: 200px;
+ }
+ .prev .swiper-slide
+ {
+   width: 70vw !important;
+   height: 100vw;
+   margin: 20px;
+  }
+  .prev
+  {
+    margin-bottom: 25vw;
+  }
+  .contact > p:first-child
+  {
+    margin-bottom: 4vw;
+  }
+  .contact
+  {
+    height: 130vw;
+  }
+  .contact .follow
+  {
+    width: 50vw !important;
+  }
+  .contact > h1 
+  {
+    margin-bottom: 80px;
+  }
+  .contact-bg
+  {
+    top: 30%;
+    border-radius: 0%;
+  }
+  .poc 
+  {
+    width: 80vw !important;
+  }
+  .poc div
+  {
+    font-size: 5vw ;
+    padding: 10px;
+  }
+  .load-slide-left .chakra-image
+  { 
+    left: 0vw ;
+  }
+  .load-slide-right .chakra-image
+  {
+    right: 0vw ;
+  }
+}
+
+@media screen and (max-width: 300px)
+{
+  .contact-bg
+  {
+    top: 40%;
+  }
+  .contact
+  {
+    height: 130vw;
+  }
+  .partner-swiper .swiper-slide, .partner-swiper .card
+  {
+    height: 50vw;
+    width: 50vw;
+  }
+  .competition-pts div
+  {
+    padding: 5px;
+  }
+  .timeline-wrapper p
+  {
+    font-size:4.5vw ;
   }
 }

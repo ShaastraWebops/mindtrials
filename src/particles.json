@@ -1,0 +1,46 @@
+{
+    "particles": {
+        "fpsLimit": 60,
+        "number": {
+            "value": 100,
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+        },
+        "color": {
+            "value": ["#86dbcc", "#f0bce3", "#ffe49c", "#9df0cb"]
+        },
+        "shape": {
+            "type": "circle",
+            "polygon": {"nb_sides": 3}
+        },
+        "opacity": {
+            "value": 0.8,
+            "random": true
+        },
+        "size": {
+            "value": 8,
+            "anim": {
+                "enable": true,
+                "speed": 60,
+                "size_min": 0.1,
+                "sync": false
+            }
+        },
+        "line_linked": {
+            "enable": true,
+            "distance": 160,
+            "color": "#7d748b",
+            "width": 2,
+            "opacity": 0.4
+        },
+        "move": {
+            "enable": true,
+            "speed": 4,
+            "random": false,
+            "straight": false,
+            "bounce": true
+        }
+    }
+}
