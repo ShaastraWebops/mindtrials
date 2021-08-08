@@ -480,6 +480,8 @@ h1
   position: relative;
   margin: auto;
   height: 38vw;
+  display: flex;
+  flex-direction: column;
   overflow-x: hidden;
 }
 .contact-bg{
@@ -487,7 +489,7 @@ h1
   top: 30%;
   width: 110vw;
   left: -5vw;
-  height: 500px;
+  height: 40vw;
   z-index: -1;
   content: "";
   border-radius: 100% 90% 10% 10%;
@@ -508,6 +510,7 @@ h1
   text-align: center;
   color: white;
   font-size: 1vw;
+  justify-self: flex-end;
 }
 .follow 
 {
@@ -586,14 +589,14 @@ h1
     width: 80%;
     margin: auto;
   }
-  .contact
+  /* .contact
   {
-    height: 100vw;
+    height: 200vw;
   }
   .contact-bg
   {
     top: 15%;
-  }
+  } */
 }
 
 @media screen and (max-width: 550px)
@@ -614,6 +617,11 @@ h1
   {
     size: ;
   } */
+  .header-menu
+  {
+    padding-right: 0vw;
+    width: 90vw !important;
+  }
   .aboutus-info p, .events-info p  
   {
     font-size: 4vw;
@@ -635,11 +643,11 @@ h1
  .flip-card, .two .flip-card, .flip-card-inner
  {
    width: 90vw;
-   height: 100vw !important;
+   height: 90vw !important;
  }
  .bs-wrapper-flex
  {
-   height: 200vw;
+   height: 100vw;
    width: 90vw;
  }
  .flip-card
@@ -665,7 +673,7 @@ h1
  }
  .competition-pts
  {
-   height: 100vw;
+   height: 120vw;
  }
  .timeline-wrapper
  {
@@ -702,7 +710,7 @@ h1
   }
   .contact
   {
-    height: 130vw;
+    height: 120vw;
   }
   .contact .follow
   {
@@ -710,12 +718,13 @@ h1
   }
   .contact > h1 
   {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
   .contact-bg
   {
     top: 30%;
     border-radius: 0%;
+    height: 150vw;
   }
   .poc 
   {
