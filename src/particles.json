@@ -9,21 +9,21 @@
             }
         },
         "color": {
-            "value": ["#86dbcc", "#f0bce3", "#ffe49c", "#9df0cb"]
+            "value": ["#39b8c6", "#c837bd", "#dfbd20", "#1be49d"]
         },
         "shape": {
             "type": "circle",
             "polygon": {"nb_sides": 3}
         },
         "opacity": {
-            "value": 0.8,
+            "value": 0.6,
             "random": true
         },
         "size": {
             "value": 8,
             "anim": {
                 "enable": true,
-                "speed": 60,
+                "speed": 40,
                 "size_min": 0.1,
                 "sync": false
             }
@@ -37,7 +37,7 @@
         },
         "move": {
             "enable": true,
-            "speed": 4,
+            "speed": 2,
             "random": false,
             "straight": false,
             "bounce": true

@@ -9,6 +9,11 @@ import postTwo from "./images/Slide4 .png"
 import postThree from "./images/Slide6 .png"
 import brainLeft from "./images/loadBrainLeft.svg"
 import brainRight from "./images/loadBrainRight.svg"
+import iben from "./images/IBEN logo.jpeg"
+import left from "./images/loadLeft.jpg"
+import right from "./images/loadRight.jpg"
+import christina from "./images/christina.png"
+import junofy from "./images/junofy.png"
 
 import {Flex, Image, Grid, GridItem, Box} from "@chakra-ui/react"
 
@@ -37,22 +42,19 @@ function App(props: Props) {
 // }
 // }
 
-  const swiperRef = React.useRef(null)
-
   return (
     <div className="body">
       <Particles id="particles-js" params={particlesCOnfig} />
-      <Flex position="absolute" top="0" left="0" width="100vw" height="100vh" alignItems="center" className="load-flex">
-        <div className="load-slide-left"><Image src={brainLeft} position="absolute" objectFit="contain" width="50vw" height="100vh" left="12vw"></Image></div>
-        <div className="load-slide-right"><Image src={brainRight} width="50vw" height="100vh" position="absolute" right="12vw"></Image></div>
+      <Flex position="absolute" top="0" left="0" width="100vw" height="100vh" alignItems="center" className="load-flex" zIndex="10">
+        <div className="load-slide-left"><Image src={left} position="absolute" objectFit="contain" width="50vw" height="100vh" left="10vw"></Image></div>
+        <div className="load-slide-right"><Image src={right} width="50vw" height="100vh" objectFit="contain" position="absolute" right="10vw"></Image>
+        <a href='https://www.freepik.com/vectors/school'>School vector created by macrovector_official - www.freepik.com</a></div>
       </Flex>
       <header hidden>
-        <Flex width="25vw" justifyContent="space-between" alignItems="center" padding="2vw" className="header-image">
-          <Image src={mtLogo} boxSize="5vw" width="fit-content"></Image>
-          <Image src={shaastraLogo} boxSize="8vw"></Image>
+        <Flex width="20vw" justifyContent="space-between" alignItems="center" className="header-image" padding="1vw" marginLeft="2vw">
+          <a href="#landing"><Image src={mtLogo} boxSize="5vw" width="fit-content"></Image></a>
         </Flex>
-        <Flex width="60vw" justifyContent="space-between" alignItems="center" padding="1vw" paddingRight="2vw" className="header-menu">
-          <a href="#landing">HOME</a>
+        <Flex width="80vw" justifyContent="space-between" alignItems="center" padding="1vw 2vw"  className="header-menu">
           <a href="#aboutus">ABOUT US</a>
           <a href="#events">EVENTS</a>
           <a href="#partners">PARTNERS</a>
@@ -61,6 +63,7 @@ function App(props: Props) {
         </Flex>
       </header>
       <section id="landing" className="landing">
+      <Image src={shaastraLogo} boxSize="8vw"></Image>
           <h1>MIND TRIALS</h1>
           <Typewriter
             options={{
@@ -70,33 +73,21 @@ function App(props: Props) {
               loop: true,
             }}
           />
-          <Grid rowGap="1vw" textAlign="center" marginTop="8vw" className="home-btns">
-            <GridItem padding="1vw"backgroundColor="lightblue" borderRadius="25px"><a href="#aboutus">EXPLORE</a></GridItem>
-            <GridItem padding="1.5vw" backgroundColor="lightblue" borderRadius="25px">
+          <Grid rowGap="1vw" textAlign="center" marginTop="4vw" className="home-btns">
+            <GridItem padding="1vw"backgroundColor="rgb(23, 16, 53)" color="white" borderRadius="25px"><a href="#aboutus">EXPLORE</a></GridItem>
+            <GridItem padding="1.5vw" backgroundColor="rgb(23, 16, 53)" color="white" borderRadius="15px">
               Registrations open for [name] <br />  <b><a href="">Click Here</a></b>
             </GridItem>
           </Grid>
       </section>
       <section id="aboutus" className="aboutus">
         <h1>ABOUT US</h1>
+        <a href='https://www.freepik.com/vectors/people'>Created by rawpixel.com - www.freepik.com</a>
       </section>
       <section>
         <div className="aboutus-info">
         <div className="shaastra">
-            <h2>SHAASTRA</h2>
-            <p>Shaastra is the annual technical festival of Indian Institute of Technology Madras. The festival is traditionally held 
-              over four days and four nights during the first week of January. Being the first in the world to be ISO 9001:2015
-              certified and completely student run with a footfall of over 50,000, Shaastra 
-              stands out from the rest in being the largest and one of the most unique tech 
-              festivals ever celebrated in India and the world. All of this is fuelled by our 
-              seamless passion: the “Spirit of Engineering”.  <br /><br />
-              We, at Shaastra, believe in Innovation. To truly achieve this goal, every year we have a brand-new department formed with 
-              the sole intention of breaking thresholds and moving forward. In light of that, this year, we, at Upskill, aspire to bring 
-              about a change in the way Computer Science education is perceived by the academic stakeholders. 
-            </p>
-        </div>
-        <div className="mt">
-            <h2>MIND TRIALS</h2>
+        <h2>MIND TRIALS</h2>
             <p>Science suggests we’re hardwired to deceive ourselves. <br /> Do we have a way out? <br />
               <br />Mind Trials, an initiative of Shaastra 2022, sets out to explore the domain of Behavioral Science and its 
               potential in influencing the way we think and act in the real world. We are powered by a passion to generate solutions 
@@ -106,6 +97,19 @@ function App(props: Props) {
               remotely interested in making a qualitative change to their life and decisions.  <br /><br />
               Shaastra Mind Trials welcomes you to join us on our enterprise to make meaningful social change, one behavioural 
               solution at a time.
+            </p>
+        </div>
+        <div className="mt">
+        <h2>SHAASTRA</h2>
+            <p>Shaastra is the annual technical festival of Indian Institute of Technology Madras. The festival is traditionally held 
+              over four days and four nights during the first week of January. Being the first in the world to be ISO 9001:2015
+              certified and completely student run with a footfall of over 50,000, Shaastra 
+              stands out from the rest in being the largest and one of the most unique tech 
+              festivals ever celebrated in India and the world. All of this is fuelled by our 
+              seamless passion: the “Spirit of Engineering”.  <br /><br />
+              We, at Shaastra, believe in Innovation. To truly achieve this goal, every year we have a brand-new department formed with 
+              the sole intention of breaking thresholds and moving forward. In light of that, this year, we, at Mind Trials, aspire to bring 
+              about a change in the society through behavioral science and create awareness about the same. 
             </p>
         </div>
         <div className="bs">
@@ -121,14 +125,12 @@ function App(props: Props) {
           </p>
         </div>
         </div>
-        <div className="bs-wrapper-flex">
+        {/* <div className="bs-wrapper-flex">
         <Flex flexDirection="column" className="bs-flex one">
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
                   <h2>Warwick Behavioural Insights Team Summit</h2>
-                </div>
-                <div className="flip-card-back">
                   <p>Conducted by an entirely student-run organisation, it is the largest student-run Behavioral Science 
                     conference in Europe. They have had prominent speakers like  Nina Mazar, Jez Groom, Paul Adams or Andrew 
                     Oswald in past years. The summit provides different perspectives, from theoretical advances in Behavioural 
@@ -141,8 +143,6 @@ function App(props: Props) {
               <div className="flip-card-inner">
                 <div className="flip-card-front">
                   <h2>World Bank Mind Behavior and Development(eMBeD) Team</h2>
-                </div>
-                <div className="flip-card-back">
                   <p>World Bank’s behavioural sciences team aims to diagnose, design, and evaluate behaviorally informed interventions.
                      Bringing together a global network of scientists and practitioners, the eMBeD team tries to answer important 
                      economic and social questions, and contributes to the global effort to eliminate poverty and increase equity.</p>
@@ -155,13 +155,10 @@ function App(props: Props) {
               <div className="flip-card-inner">
                 <div className="flip-card-front">
                   <h2>Reducing road fatalities through loss aversion in South Africa - An ideas42 study</h2>
-                </div>
-                <div className="flip-card-back">
-                  <p>The organisation designed a strategy to reduce road fatalities through a lottery. The lottery was an incentive to 
-                    follow road rules and take safety measures seriously - anyone who had a clean record at the start of the festive 
+                  <p>The organisation designed a strategy to reduce road fatalities through a lottery. Anyone who had a clean record at the start of the festive 
                     season was automatically entered into a draw for two cash prizes. This strategy uses the psychology of lotteries - 
                     the slim chance of winning a large sum is more compelling than the certainty of getting a smaller sum - and 
-                    loss aversion - tendency to avoid choices where there might be a loss of something belonging to us. </p>
+                    loss aversion. </p>
                 </div>
               </div>
             </div>
@@ -169,12 +166,9 @@ function App(props: Props) {
               <div className="flip-card-inner">
                 <div className="flip-card-front">
                   <h2>Increasing saving deposits in the Philippines - An ideas42 Study</h2>
-                </div>
-                <div className="flip-card-back">
                   <p>Behavioural diagnosis showed that the accounts were opened without any intention or plan on using them. 
                     There was also the factor of present bias, present financial temptations and expenses are more pressing than 
-                    saving for the future, that was responsible for account dormancy. The organization designed a strategy employing 
-                    nudges to improve the situation. A redesigned savings program plus behavioural nudges in the form of SMS saw an 
+                    saving for the future, that was responsible for account dormancy. A redesigned savings program plus behavioural nudges in the form of SMS saw an 
                     increase the account and platform usage.</p>
                 </div>
               </div>
@@ -182,9 +176,19 @@ function App(props: Props) {
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <h2>India Behavioural Economics Network</h2>
+                  <h2>Nudgestock 2021</h2>
+                  <p>A 12-hour virtual talk marathon featuring the most provocative minds spanning the worlds of behavioural science, 
+                    sociology, and entertainment. The summit explains why the keys to understanding hot-button issues like mindfulness, 
+                    climate change, and vaccine hesitancy are all about behavioural science.</p>
                 </div>
-                <div className="flip-card-back">
+              </div>
+            </div>
+          </Flex>
+          <Flex flexDirection="column" className="bs-flex three">
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <h2>India Behavioural Economics Network</h2>
                   <p>Focusing on promoting Behavioral Economics in India, IBEN conducts various formal and informal events to discuss 
                     behavioural science, recent developments in the field and its applications in the Indian context. They conduct 
                     webinars on varied facets of the field from behavioural finance to social norms. The global conference on Behavioral 
@@ -194,30 +198,86 @@ function App(props: Props) {
                 </div>
               </div>
             </div>
-          </Flex>
-          <Flex flexDirection="column" className="bs-flex three">
-            <div className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <h2>Nudgestock 2021</h2>
-                </div>
-                <div className="flip-card-back">
-                  <p>A 12-hour virtual talk marathon featuring the most provocative minds spanning the worlds of behavioural science, 
-                    sociology, and entertainment. The summit explains why the keys to understanding hot-button issues like mindfulness, 
-                    climate change, and vaccine hesitancy are all about behavioural science.</p>
-                </div>
-              </div>
-            </div>
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
                   <h2>Digital health tools and the Pandemic- in Busia, Thika by Living Goods and Medic</h2>
-                </div>
-                <div className="flip-card-back">
                   <p>Text messages and chatbots are efficient means to share health information. But this can easily get overwhelming 
                     simply because of the sheer number of similar services. The Innovation Network designed interventions to target the 
                     audience’s behavior from creating trust to using the platform.</p>
                 </div>
+              </div>
+            </div>
+          </Flex>
+        </div> */}
+
+        <div className="bs-wrapper-flex">
+        <Flex flexDirection="column" className="bs-flex one">
+            <div className="flip-card">
+            <div className="flip-card-inner">
+              <a href="https://warwick.ac.uk/research/priorities/behaviour-brain-society/research/wbit/" target="_blank">
+                <div className="flip-card-front">
+                  <h2>WARWICK BEHAVIOURAL INSIGHTS TEAM SUMMIT</h2>
+                </div>
+              </a>
+              </div>
+            </div>
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <a href="https://www.worldbank.org/en/programs/embed" target="_blank">
+                <div className="flip-card-front">
+                  <h2>WORLD BANK MIND BEHAVIOR AND DEVELOPMENT (eMBeD) TEAM</h2>
+                </div>
+                </a>
+              </div>
+            </div>
+          </Flex>
+          <Flex flexDirection="column" className="bs-flex two">
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <a href="https://www.ideas42.org/wp-content/uploads/2018/04/Project-Brief_Offering-Rewards-to-Safe-Drivers.pdf" target="_blank">
+                <div className="flip-card-front">
+                  <h2>Reducing road fatalities through loss aversion in South Africa <br /><br />  AN IDEAS42 STUDY</h2>
+                </div>
+                </a>
+              </div>
+            </div>
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <a href="https://www.ideas42.org/wp-content/uploads/2019/04/I42-1020_ABPaper_FINAL-DIGITAL.pdf" target="_blank">
+                <div className="flip-card-front">
+                  <h2>Increasing saving deposits in the Philippines <br /><br />  AN IDEAS42 STUDY</h2>
+                </div>
+                </a>
+              </div>
+            </div>
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <a href="https://www.nudgestock.co.uk/" target="_blank">
+                <div className="flip-card-front">
+                  <h2>NUDGESTOCK 2021</h2>
+                </div>
+                </a>
+              </div>
+            </div>
+          </Flex>
+          <Flex flexDirection="column" className="bs-flex three">
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <a href="https://iben.co.in/" target="_blank">
+                <div className="flip-card-front">
+                  <h2>INDIA BEHAVIOURAL ECONOMICS NETWORK</h2>
+                </div>
+                </a>
+              </div>
+            </div>
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <a href="https://livinggoods.org/what-we-do/mhealth/" target="_blank">
+                <div className="flip-card-front">
+                  <h2>Digital health tools and the Pandemic <br /><br />  in BUSIA, THIKA by LIVING GOODS AND MEDIC</h2>
+                </div>
+                </a>
               </div>
             </div>
           </Flex>
@@ -229,32 +289,66 @@ function App(props: Props) {
       <section className="events-info">
         <div className="survey-div"> 
           <h2>SURVEY</h2>
-          <Flex flexDirection="row" justifyContent="space-between" alignItems="center">
-            <p>Do your decisions depend on how options are presented to you? <br />
-              Do you have a harder time choosing when you have more options? <br />
-              Do you place a disproportionately high value on things you helped create? <br /><br />
+          <Flex flexDirection="row" justifyContent="space-between" alignItems="center" className="survey-flex">
+            <p className="survey-info"><em>Do your <b>decisions</b> depend on how <b>options are presented</b> to you?</em> <br />
+              <em>Do you have a <b>harder time choosing</b> when you have <b>more options</b> ?</em> <br />
+              <em>Do you place a disproportionately <b>high value</b> on things <b>you helped create</b> ?</em> <br /><br />
               In a routine conversation with your friend, in the short five seconds before you skip ads on youtube, or in making the 
               biggest or most trivial decisions in life, you are under the influence of a Biased mind. <br /><br />
-              Find yourself shaking your head in disagreement? <br /><br />
-              Or are you curious to know how you often get tricked by your own brain? <br />
+              <em>Find yourself shaking your head in disagreement?</em> <br /><br />
+              <em> Or are you curious to know how you often get tricked by your own brain?</em> <br /><br />
               Either way, we ran a survey designed to capture the quirks of human behaviour in a fun, exciting 10-minute experiment. 
               And here is what we found. </p>
-              <Flex flexDirection="column" justifyContent="space-between" width="40%">
+              {/* <Flex flexDirection="column" justifyContent="space-between" width="40%">
                 <Image src={postOne} boxSize="15vw"></Image>
                 <Image src={postTwo} boxSize="15vw" alignSelf="flex-end"></Image>
                 <Image src={postThree} boxSize="15vw"></Image>
-              </Flex>
+              </Flex> */}
+              <Swiper 
+                // direction={"vertical"}
+                pagination={{clickable: true}}
+                // navigation={true}
+                centeredSlides={true}
+                className="surveySwiper"
+                breakpoints={
+                  {
+                    1100: {
+                      direction: "vertical",
+                    },
+                    200: {
+                      direction: "horizontal",
+                  }
+                }
+                }
+              >
+                <SwiperSlide>
+                  <Image src={postOne} boxSize="22vw"></Image>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image src={postTwo} boxSize="22vw" ></Image>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image src={postThree} boxSize="22vw"></Image>
+                </SwiperSlide>
+              </Swiper>
           </Flex>
         </div>
         <div className="theme-reveal">
           <h2>THEME REVEAL</h2>
-          <p>Clouded by biases, we not only make the less optimal choices but also remain blind to the irrationality of our actions. 
-            <br /><br />
-            Building on the results of our Survey, we invited our audience to a participatory session involving multiple experiments 
-            and group activities designed to alert people to the blind spots in our behavioural responses.  <br /><br />
-            This two-hour session on Cognitive Biases also saw the audience engage with <b>[speaker name]</b> on <b>[talk theme]</b>. 
-            Prefaced by a short segue to the field and its relevance today, the event cemented Mind Trials’ commitment to 
-            popularising the use of Behavioural Science for social good. </p>
+          <Flex width="80vw" margin="0 auto" className="theme-flex" justifyContent="center" alignItems="center">
+            <p>Clouded by biases, we not only make the less optimal choices but also remain blind to the irrationality of our actions. 
+                <br /><br />
+                Building on the results of our Survey, we invited our audience to a participatory session involving multiple experiments 
+                and group activities designed to alert people to the blind spots in our behavioural responses.  <br /><br />
+                This two-hour session on Cognitive Biases also saw the audience engage with <b>Dr. Christina Gravert</b>.
+                The event was concluded with a talk by <b>Dr. Junofy Anto Rozarina</b> and the annoucement of the case study competition.
+                Prefaced by a short segue to the field and its relevance today, the event cemented Mind Trials’ commitment to 
+                popularising the use of Behavioural Science for social good. </p>
+            <Flex width="40%" flexDirection="column" justifyContent="space-between" margin="auto" alignItems="center" height="100%" className="theme-pic-flex">
+              <Image src={christina} width="24vw" height="auto" margin="2vh 0"></Image>
+              <Image src={junofy} width="24vw" height="auto" margin="2vh 0"></Image>
+            </Flex>
+          </Flex>
         </div>
         <div className="competition">
           <h2>COMPETITION</h2>
@@ -264,35 +358,35 @@ function App(props: Props) {
               be implemented in the real world and tested for their efficacy. <br /><br />
               Organized in collaboration with the India Behavioural Economics Network (IBEN), a leading behavioural science organization 
               in India, the programme shall focus on bringing together students and professionals passionate about this field to innovate 
-              and create practical solutions in our three focus sectors: <b>Fitness</b>, <b>Sanitation</b> and <b>Road Safety</b>. <br /><br /> 
+              and create practical solutions in our three focus sectors: <b>FITNESS</b>, <b>SANITATION</b> and <b>ROAD SAFETY</b>. <br /><br /> 
               The winners of the competition would not only get to see their suggestions implemented in real-time but will also be invited 
               to Shaastra 2022 to present their solutions to the industry, academia and general public. </p>
-              <Flex flexDirection="column" className="competition-pts" justifyContent="space-between" margin="4vw 0">
+              <Flex flexDirection="column" className="competition-pts" justifyContent="space-between" margin="4vw 0" width="34vw">
                   <div>Behavioural Design introductory Workshop</div>
                   <div>Two-round case-study competition</div>
                   <div>Personalised mentorship for finalists</div>
                   <div>Implementation of winner's solutions</div>
               </Flex>
           </Flex>
-            <div className="button"><a href="">REGISTER</a></div>
-            <Flex className="timeline-wrapper" justifyContent="space-between">
+            <Flex className="timeline-wrapper" justifyContent="space-between" >
                   <Flex flexDirection="column" height="20vw" width="15vw" alignItems="center" className="timeline" justifyContent="center">
-                    <p>Registration closes</p>
+                    <p>REGISTRATION CLOSES</p>
                     <p className="timeline-date">Aug 4</p>
                   </Flex>
                   <Flex flexDirection="column" height="20vw" width="15vw"  alignItems="center" className="timeline" justifyContent="center">
-                    <p>Round 1 ends</p>
+                    <p>ROUND 1 ENDS</p>
                     <p className="timeline-date">Aug 4</p>
                   </Flex>
                   <Flex flexDirection="column" height="20vw" width="15vw"  alignItems="center" className="timeline" justifyContent="center">
-                    <p>Round 2 ends</p>
+                    <p>ROUND 2 ENDS</p>
                     <p className="timeline-date">Aug 4</p>
                   </Flex>
                   <Flex flexDirection="column" justifyContent="center" height="20vw" width="15vw"  alignItems="center" className="timeline">
-                    <p>Results</p>
+                    <p>RESULTS</p>
                     <p className="timeline-date">Aug 4</p>
                  </Flex>
             </Flex>
+            <div className="button"><a href="">REGISTER</a></div>
         </div>
       </section>
       <section id="partners" className="partners">
@@ -301,20 +395,20 @@ function App(props: Props) {
             slidesPerView={3}
             loop={true}
             centeredSlides={true}
-            autoplay={{delay: 1500}} className="partner-swiper"
+            autoplay={{delay: 600}} className="partner-swiper"
             breakpoints={
               {
-                1000: {
-                  slidesPerView: 3,
-                  spaceBetween: 0,
-                },
                 750: {
-                  spaceBetween: 3,
                   slidesPerView: 3,
+                  spaceBetween: 10,
                 },
+                // 750: {
+                //   spaceBetween: 0,
+                //   slidesPerView: 2,
+                // },
                 200: {
                   slidesPerView: 1,
-                  spaceBetween: 20,
+                  spaceBetween: 50,
                   centeredSlides: true,
                 }
               }
@@ -375,7 +469,7 @@ function App(props: Props) {
                   </div>
                 </div>
                </SwiperSlide> */}
-               <SwiperSlide>
+               {/* <SwiperSlide>
                  <div className="card">
                     <h2>India Behavioural Economics Network (IBEN)</h2>
                  </div>
@@ -394,18 +488,30 @@ function App(props: Props) {
                  <div className="card">
                     <h2>India Behavioural Economics Network (IBEN)</h2>
                  </div>
+               </SwiperSlide> */}
+               <SwiperSlide>
+                 <a href="https://iben.co.in/" target="_blank"><Image src={iben} boxSize="18vw"></Image></a>
+               </SwiperSlide>
+               <SwiperSlide>
+                 <a href="https://iben.co.in/" target="_blank"><Image src={iben} boxSize="18vw"></Image></a>
+               </SwiperSlide>
+               <SwiperSlide>
+                 <a href="https://iben.co.in/" target="_blank"><Image src={iben} boxSize="18vw"></Image></a>
+               </SwiperSlide>
+               <SwiperSlide>
+                 <a href="https://iben.co.in/" target="_blank"><Image src={iben} boxSize="18vw"></Image></a>
                </SwiperSlide>
           </Swiper>
       </section>
       <section id="prev" className="prev">
         <h1>PREVIOUS</h1>
         <Swiper
-          effect={'coverflow'}
+          className="prevSwiper"
           centeredSlides={true}
           grabCursor={true}
-          slidesPerView={3}
-          spaceBetween={50}
-          initialSlide={1}
+          effect= 'coverflow'
+          slidesPerView="auto"
+          loop={true}
           coverflowEffect={{
             "rotate": 50,
             "stretch": 0,
@@ -416,21 +522,32 @@ function App(props: Props) {
           pagination={{clickable:true}}
           keyboard={{"enabled": true}}
           breakpoints={{
-            1000 : {
-              effect: 'coverflow',
-              slidesPerView: 3,
+            1100: {
+              spaceBetween: 50,
             },
-            200: {
+            200 : {
+              // slidesPerView: 1,
+              initialSlide: 0,
               effect: 'slide',
-              slidesPerView: 1,
-            }
+              // centeredSlides: true,
+              grabCursor: true,
+              spaceBetween: 70,
+            },
+            // 200: {
+            //   spaceBetween: 50,
+            //   slidesPerView: 3,
+            //   // centeredSlides: true,
+            //   initialSlide: 1,
+            //   effect: "slide",
+            //   loop: false,
+            // }
           }}>
             <SwiperSlide>
               <h2>UPSKILL</h2>
               <p>Formed with the vision of revolutionizing school level CS education in India, UpSkill worked to introduce robust 
-                Computational Thinking skills at an early age among students. To this end, UpSkill organised events, workshops and 
-                discussions to help CS educators get acquainted with efficient pedagogies in this domain, to improve computational 
-                thinking skills among students, and to guide school admins on implementing a coding curriculum in schools.</p>
+                Computational Thinking skills at an early age among students. UpSkill organised events, workshops and 
+                discussions to help CS educators get acquainted with efficient pedagogies in the domain, to improve computational 
+                thinking skills among students, and to guide school admins on implementing a coding curriculum.</p>
             </SwiperSlide>
             <SwiperSlide>
               <h2>STeP</h2>
@@ -443,9 +560,7 @@ function App(props: Props) {
               <h2>RELAUNCH</h2>
               <p>Shaastra Relaunch aimed at solving the enormous but surmountable problem of helping women professionals to get back to 
                 their careers after a hiatus. With Relaunch, we aspired to be the spark that brings out the dormant skills of women who 
-                have taken a break from their professional careers, dust themselves off and start afresh. Relaunch strived to help women 
-                catch up with what they've missed and link with a vast network of delegate companies to set themselves onto the track of 
-                their interest.</p>
+                have taken a break from their professional careers, dust themselves off and start afresh. </p>
             </SwiperSlide>
         </Swiper>
         <h1>INITIATIVES</h1>
@@ -455,7 +570,7 @@ function App(props: Props) {
       <div className="contact-bg"></div>
           <h1>CONTACT US</h1>
           <p>mindtrials@shaastra.org</p>
-          <Flex width="50vw" margin="auto" justifyContent="space-between" alignItems="center" className="poc">
+          <Flex width="50vw" margin="0px auto" justifyContent="space-between" alignItems="center" className="poc">
             <div>
               <h3>Vir Karan</h3>
               <p>+91 80088 73918</p>
