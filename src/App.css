@@ -670,7 +670,7 @@ header a
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 1100px)
+@media screen and (max-width: 1500px)
 {
   .aboutus-info h2, .events-info h2
   {
@@ -828,6 +828,14 @@ header a
   }
 }
 
+@media screen and (max-width: 850px)
+{
+  .flip-card, .two .flip-card, .flip-card-inner
+ {
+   height: 40vh !important;
+ }
+}
+
 @media screen and (max-width: 550px)
 {
   .body
@@ -887,7 +895,6 @@ header a
  {
    width: 80vw;
    /* font-size: 3vw !important; */
-   height: 40vh !important;
    border-radius: 0%;
    margin: auto ;
    margin-bottom: 10px;

@@ -76,7 +76,7 @@ function App(props: Props) {
           <Grid rowGap="1vw" textAlign="center" marginTop="4vw" className="home-btns">
             <GridItem padding="1vw"backgroundColor="rgb(23, 16, 53)" color="white" borderRadius="25px"><a href="#aboutus">EXPLORE</a></GridItem>
             <GridItem padding="1.5vw" backgroundColor="rgb(23, 16, 53)" color="white" borderRadius="15px">
-              Registrations open for [name] <br />  <b><a href="">Click Here</a></b>
+               <b><a href="">Click Here</a></b> <br /> To know more about NUDGE-IT
             </GridItem>
           </Grid>
       </section>
@@ -102,7 +102,7 @@ function App(props: Props) {
         <div className="mt">
         <h2>SHAASTRA</h2>
             <p>Shaastra is the annual technical festival of Indian Institute of Technology Madras. The festival is traditionally held 
-              over four days and four nights during the first week of January. Being the first in the world to be ISO 9001:2015
+              over four days and four nights during the first week of January. Being the first in the world to be ISO
               certified and completely student run with a footfall of over 50,000, Shaastra 
               stands out from the rest in being the largest and one of the most unique tech 
               festivals ever celebrated in India and the world. All of this is fuelled by our 
@@ -334,7 +334,7 @@ function App(props: Props) {
           </Flex>
         </div>
         <div className="theme-reveal">
-          <h2>THEME REVEAL</h2>
+          <h2>HEURISTICALLY SPEAKING</h2>
           <Flex width="80vw" margin="0 auto" className="theme-flex" justifyContent="center" alignItems="center">
             <p>Clouded by biases, we not only make the less optimal choices but also remain blind to the irrationality of our actions. 
                 <br /><br />
@@ -351,7 +351,7 @@ function App(props: Props) {
           </Flex>
         </div>
         <div className="competition">
-          <h2>COMPETITION</h2>
+          <h2>NUDGE-IT</h2>
           <Flex justifyContent="space-between" className="competition-flex">
             <p>Staying committed to our mission of using Behavioural insights for the public good, Mind Trials invites you to join us in 
               our two-month-long nudge-developing programme spanning three parallel tracks, wherein select solutions from the event will 
@@ -371,22 +371,24 @@ function App(props: Props) {
             <Flex className="timeline-wrapper" justifyContent="space-between" >
                   <Flex flexDirection="column" height="20vw" width="15vw" alignItems="center" className="timeline" justifyContent="center">
                     <p>REGISTRATION CLOSES</p>
-                    <p className="timeline-date">Aug 4</p>
+                    <p className="timeline-date">Sept 5</p>
                   </Flex>
                   <Flex flexDirection="column" height="20vw" width="15vw"  alignItems="center" className="timeline" justifyContent="center">
                     <p>ROUND 1 ENDS</p>
-                    <p className="timeline-date">Aug 4</p>
+                    <p className="timeline-date">Sept 24</p>
                   </Flex>
                   <Flex flexDirection="column" height="20vw" width="15vw"  alignItems="center" className="timeline" justifyContent="center">
                     <p>ROUND 2 ENDS</p>
-                    <p className="timeline-date">Aug 4</p>
+                    <p className="timeline-date">Oct 24</p>
                   </Flex>
                   <Flex flexDirection="column" justifyContent="center" height="20vw" width="15vw"  alignItems="center" className="timeline">
-                    <p>RESULTS</p>
-                    <p className="timeline-date">Aug 4</p>
+                    <p>IMPLEMENTATION</p>
+                    <p className="timeline-date">Oct 25</p>
                  </Flex>
             </Flex>
-            <div className="button"><a href="">REGISTER</a></div>
+            <div className="button">
+              <a href="https://dare2compete.com/competition/nudge-it-shaastra-2022-indian-institute-of-technology-iit-madras-194510?lb=olKRCDy" target="_blank">REGISTER</a>
+              </div>
         </div>
       </section>
       <section id="partners" className="partners">

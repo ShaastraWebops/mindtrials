@@ -2,6 +2,7 @@ import { setTimeout } from "timers";
 
 
 export const script = () => {
+    document.title = "MindTrials"
     document.addEventListener("scroll", () => {
         var header: HTMLElement = document.querySelector("header")!;
         var height = window.innerHeight;
