@@ -49,10 +49,10 @@ function App(props: Props) {
         <a href='https://www.freepik.com/vectors/school'>School vector created by macrovector_official - www.freepik.com</a></div>
       </Flex>
       <header hidden>
-        <Flex width="20vw" justifyContent="space-between" alignItems="center" className="header-image" padding="1vw" marginLeft="2vw">
-          <a href="#landing"><Image src={mtLogo} boxSize="5vw" width="fit-content"></Image></a>
+        <Flex width="20vw" justifyContent="space-between" alignItems="center" className="header-image" padding="0.5vw" marginLeft="2vw">
+          <a href="#landing"><Image src={mtLogo} boxSize="3.5vw" width="fit-content"></Image></a>
         </Flex>
-        <Flex width="80vw" justifyContent="space-between" alignItems="center" padding="1vw 2vw"  className="header-menu">
+        <Flex width="80vw" justifyContent="space-between" alignItems="center" padding="0vw 2vw"  className="header-menu">
           <a href="#aboutus">ABOUT US</a>
           <a href="#events">EVENTS</a>
           <a href="#partners">PARTNERS</a>

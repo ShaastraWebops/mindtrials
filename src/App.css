@@ -7,6 +7,10 @@ html{
   scroll-snap-type: y mandatory;
   box-sizing: border-box;
 }
+header 
+{
+  height: 12vh !important;
+}
 .body
 {
   font-size: 1.1vw;
@@ -676,6 +680,7 @@ header a
   header 
   {
     font-size: 2vw;
+    height: 21vh !important;
     flex-direction: column;
     justify-content: center !important;
   }
@@ -697,6 +702,10 @@ header a
   .flip-card
   {
     font-size: 2vw;
+  } 
+  .flip-card, .two .flip-card, .flip-card-inner
+  {
+    height: 40vh !important;
   }
  .survey-flex, .theme-flex
  {
@@ -753,7 +762,7 @@ header a
   }
   .competition-pts
   {
-    height: 40vh;
+    height: 60vh;
     margin: auto 0 !important;
   }
   .timeline p
@@ -781,7 +790,7 @@ header a
   .prev .swiper-slide
   {
     /* transform: translateX(15vw) !important; */
-    height: 30vh;
+    height: 50vh;
     width: 60vw !important;
   }
   .prev .swiper-wrapper
@@ -795,17 +804,19 @@ header a
   }
   .contact
   {
-    height: 60vh;
+    height: 100vh;
     padding-bottom: 10px;
   }
   .contact p, .contact div, .contact p:last-child
   {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   .contact-bg
   {
-    top: 30%;
-    height: 50vh;
+    top: 40%;
+    left: -50%;
+    width: 200vw;
+    height: 100vh;
   }
   .load-slide-left .chakra-image
   { 
@@ -819,13 +830,51 @@ header a
 
 @media screen and (max-width: 850px)
 {
+  .prev .swiper-slide
+ {
+   width: 65vw !important;
+   height: 55vh;
+  }
+  .prev p 
+  {
+    font-size: 3vw;
+  }
+  .prev .swiper-container
+  {
+    width: 80vw !important;
+    padding-top: 5vh !important;
+    height: 65vh;
+  }
+  .prev
+  {
+    margin-bottom: 25vw;
+    position: relative;
+    margin-top: 40px;
+    height: fit-content;
+  }
   .flip-card, .two .flip-card, .flip-card-inner
  {
    height: 40vh !important;
  }
+ .contact
+  {
+    height: 50vh;
+    padding-bottom: 10px;
+  }
+  .contact-bg
+  {
+    top: 40%;
+    left: -50%;
+    width: 200vw;
+    height: 50vh;
+  }
 }
-@media screen and (max-width: 800px)
+@media screen and (max-width: 750px)
 {
+  header 
+  {
+    height: 30vh !important;
+  }
   .flip-card, .two .flip-card, .flip-card-inner
  {
    height: 40vh !important;
@@ -860,7 +909,7 @@ header a
  {
    margin-top: 15vh;
  }
- .competition p 
+ .competition p, .theme-reveal p, .survey p
  {
    width: 90%;
    text-align: center;
@@ -879,7 +928,7 @@ header a
  }
  .competition-pts div 
  {
-   font-size: 3vw;
+   font-size: 2.4vw;
    width: 60vw;
  }
  .timeline-wrapper, .timeline
@@ -930,21 +979,32 @@ header a
   {
     margin-bottom: 25vw;
     position: relative;
+    margin-top: 40px;
     height: fit-content;
   }
   .contact
   {
-    height: 120vh;
+    height: 140vh;
     padding-bottom: 10px;
+  }
+  .contact h1 
+  {
+    margin-top: 0;
   }
   .contact p, .contact div, .contact p:last-child
   {
     font-size: 3vw;
   }
+  .contact p:first-child
+  {
+    margin-top: 20px;
+  }
   .contact-bg
   {
     top: 20%;
-    height: 100vh;
+    left: -52%;
+    height: 120vh;
+    width: 200vw;
   }
 }
 
@@ -971,6 +1031,7 @@ header a
   header 
   {
     font-size: 2vw;
+    height: 12vh !important;
   }
   /* .header-image .image 
   {
@@ -1170,7 +1231,7 @@ header a
   }
   .contact-bg
   {
-    top: 30%;
+    top: 20%;
     border-radius: 0%;
     height: 150vw;
   }
