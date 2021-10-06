@@ -293,6 +293,9 @@ function App(props: Props) {
                     <p className="timeline-date">Nov 1</p>
                  </Flex>
             </Flex>
+            <div className="button">
+              <a href="https://dare2compete.com/competition/nudge-it-shaastra-2022-indian-institute-of-technology-iit-madras-194510?lb=olKRCDy" target="_blank">VIEW MORE</a>
+              </div>
         </div>
       </section>
       <section id="partners" className="partners">
