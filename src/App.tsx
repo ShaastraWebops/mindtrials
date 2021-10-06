@@ -7,13 +7,17 @@ import shaastraLogo from "./images/shaastraLogo.svg"
 import postOne from "./images/Slide2 .png"
 import postTwo from "./images/Slide4 .png"
 import postThree from "./images/Slide6 .png"
-import brainLeft from "./images/loadBrainLeft.svg"
-import brainRight from "./images/loadBrainRight.svg"
+// import brainLeft from "./images/loadBrainLeft.svg"
+// import brainRight from "./images/loadBrainRight.svg"
 import iben from "./images/IBEN logo.jpeg"
 import left from "./images/loadLeft.jpg"
 import right from "./images/loadRight.jpg"
 import christina from "./images/christina.png"
 import junofy from "./images/junofy.png"
+import upskill from "./images/UpSkill Logo vector.png"
+import step from "./images/STeP_Logo_Black-01.png"
+import relaunch from "./images/relaunch.png"
+import gramalaya from "./images/gramalaya.png"
 
 import {Flex, Image, Grid, GridItem, Box} from "@chakra-ui/react"
 
@@ -35,12 +39,6 @@ interface Props {}
 function App(props: Props) {
   script();
   load();
-//   "attract": {
-//     "enable": true,
-//     "rotateX": 600,
-//     "rotateY": 1200
-// }
-// }
 
   return (
     <div className="body">
@@ -76,7 +74,7 @@ function App(props: Props) {
           <Grid rowGap="1vw" textAlign="center" marginTop="4vw" className="home-btns">
             <GridItem padding="1vw"backgroundColor="rgb(23, 16, 53)" color="white" borderRadius="25px"><a href="#aboutus">EXPLORE</a></GridItem>
             <GridItem padding="1.5vw" backgroundColor="rgb(23, 16, 53)" color="white" borderRadius="15px">
-               <b><a href="">Click Here</a></b> <br /> To know more about NUDGE-IT
+               <b><a href="https://dare2compete.com/competition/nudge-it-shaastra-2022-indian-institute-of-technology-iit-madras-194510?lb=VO6N4Bx" target="_blank">Click Here</a></b> <br /> To know more about NUDGE-IT
             </GridItem>
           </Grid>
       </section>
@@ -125,91 +123,7 @@ function App(props: Props) {
           </p>
         </div>
         </div>
-        {/* <div className="bs-wrapper-flex">
-        <Flex flexDirection="column" className="bs-flex one">
-            <div className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <h2>Warwick Behavioural Insights Team Summit</h2>
-                  <p>Conducted by an entirely student-run organisation, it is the largest student-run Behavioral Science 
-                    conference in Europe. They have had prominent speakers like  Nina Mazar, Jez Groom, Paul Adams or Andrew 
-                    Oswald in past years. The summit provides different perspectives, from theoretical advances in Behavioural 
-                    Science to challenges of bringing interventions to life. It is an opportunity for everyone to hear inspiring ideas, 
-                    form partnerships and discover new trends in Behavioral Science.</p>
-                </div>
-              </div>
-            </div>
-            <div className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <h2>World Bank Mind Behavior and Development(eMBeD) Team</h2>
-                  <p>World Bank’s behavioural sciences team aims to diagnose, design, and evaluate behaviorally informed interventions.
-                     Bringing together a global network of scientists and practitioners, the eMBeD team tries to answer important 
-                     economic and social questions, and contributes to the global effort to eliminate poverty and increase equity.</p>
-                </div>
-              </div>
-            </div>
-          </Flex>
-          <Flex flexDirection="column" className="bs-flex two">
-            <div className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <h2>Reducing road fatalities through loss aversion in South Africa - An ideas42 study</h2>
-                  <p>The organisation designed a strategy to reduce road fatalities through a lottery. Anyone who had a clean record at the start of the festive 
-                    season was automatically entered into a draw for two cash prizes. This strategy uses the psychology of lotteries - 
-                    the slim chance of winning a large sum is more compelling than the certainty of getting a smaller sum - and 
-                    loss aversion. </p>
-                </div>
-              </div>
-            </div>
-            <div className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <h2>Increasing saving deposits in the Philippines - An ideas42 Study</h2>
-                  <p>Behavioural diagnosis showed that the accounts were opened without any intention or plan on using them. 
-                    There was also the factor of present bias, present financial temptations and expenses are more pressing than 
-                    saving for the future, that was responsible for account dormancy. A redesigned savings program plus behavioural nudges in the form of SMS saw an 
-                    increase the account and platform usage.</p>
-                </div>
-              </div>
-            </div>
-            <div className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <h2>Nudgestock 2021</h2>
-                  <p>A 12-hour virtual talk marathon featuring the most provocative minds spanning the worlds of behavioural science, 
-                    sociology, and entertainment. The summit explains why the keys to understanding hot-button issues like mindfulness, 
-                    climate change, and vaccine hesitancy are all about behavioural science.</p>
-                </div>
-              </div>
-            </div>
-          </Flex>
-          <Flex flexDirection="column" className="bs-flex three">
-            <div className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <h2>India Behavioural Economics Network</h2>
-                  <p>Focusing on promoting Behavioral Economics in India, IBEN conducts various formal and informal events to discuss 
-                    behavioural science, recent developments in the field and its applications in the Indian context. They conduct 
-                    webinars on varied facets of the field from behavioural finance to social norms. The global conference on Behavioral 
-                    Economics and Finance 2020 featured more than 70 speakers from all over the world discussing their research over a 
-                    span of three days. They also offer training programs in varied topics like Behavioral Economics, UX Design, 
-                    Neuroeconomics, Behavioral Science for startups, etc.</p>
-                </div>
-              </div>
-            </div>
-            <div className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <h2>Digital health tools and the Pandemic- in Busia, Thika by Living Goods and Medic</h2>
-                  <p>Text messages and chatbots are efficient means to share health information. But this can easily get overwhelming 
-                    simply because of the sheer number of similar services. The Innovation Network designed interventions to target the 
-                    audience’s behavior from creating trust to using the platform.</p>
-                </div>
-              </div>
-            </div>
-          </Flex>
-        </div> */}
+      
 
         <div className="bs-wrapper-flex">
         <Flex flexDirection="column" className="bs-flex one">
@@ -299,15 +213,8 @@ function App(props: Props) {
               <em> Or are you curious to know how you often get tricked by your own brain?</em> <br /><br />
               Either way, we ran a survey designed to capture the quirks of human behaviour in a fun, exciting 10-minute experiment. 
               And here is what we found. </p>
-              {/* <Flex flexDirection="column" justifyContent="space-between" width="40%">
-                <Image src={postOne} boxSize="15vw"></Image>
-                <Image src={postTwo} boxSize="15vw" alignSelf="flex-end"></Image>
-                <Image src={postThree} boxSize="15vw"></Image>
-              </Flex> */}
               <Swiper 
-                // direction={"vertical"}
                 pagination={{clickable: true}}
-                // navigation={true}
                 centeredSlides={true}
                 className="surveySwiper"
                 breakpoints={
@@ -371,43 +278,37 @@ function App(props: Props) {
             <Flex className="timeline-wrapper" justifyContent="space-between" >
                   <Flex flexDirection="column" height="20vw" width="15vw" alignItems="center" className="timeline" justifyContent="center">
                     <p>REGISTRATION CLOSES</p>
-                    <p className="timeline-date">Sept 5</p>
+                    <p className="timeline-date">Sept 18</p>
                   </Flex>
                   <Flex flexDirection="column" height="20vw" width="15vw"  alignItems="center" className="timeline" justifyContent="center">
                     <p>ROUND 1 ENDS</p>
-                    <p className="timeline-date">Sept 24</p>
+                    <p className="timeline-date">Sept 30</p>
                   </Flex>
                   <Flex flexDirection="column" height="20vw" width="15vw"  alignItems="center" className="timeline" justifyContent="center">
                     <p>ROUND 2 ENDS</p>
-                    <p className="timeline-date">Oct 24</p>
+                    <p className="timeline-date">Oct 31</p>
                   </Flex>
                   <Flex flexDirection="column" justifyContent="center" height="20vw" width="15vw"  alignItems="center" className="timeline">
                     <p>IMPLEMENTATION</p>
-                    <p className="timeline-date">Oct 25</p>
+                    <p className="timeline-date">Nov 1</p>
                  </Flex>
             </Flex>
-            <div className="button">
-              <a href="https://dare2compete.com/competition/nudge-it-shaastra-2022-indian-institute-of-technology-iit-madras-194510?lb=olKRCDy" target="_blank">REGISTER</a>
-              </div>
         </div>
       </section>
       <section id="partners" className="partners">
           <h1>OUR PARTNERS</h1>
-          <Swiper
+          {/* <Swiper
             slidesPerView={3}
             loop={true}
             centeredSlides={true}
-            autoplay={{delay: 600}} className="partner-swiper"
+            // autoplay={{delay: 600}} 
+            className="partner-swiper"
             breakpoints={
               {
                 750: {
                   slidesPerView: 3,
                   spaceBetween: 10,
                 },
-                // 750: {
-                //   spaceBetween: 0,
-                //   slidesPerView: 2,
-                // },
                 200: {
                   slidesPerView: 1,
                   spaceBetween: 50,
@@ -415,84 +316,12 @@ function App(props: Props) {
                 }
               }
             }>
-               {/* <SwiperSlide>
-                <div className="flip-card">
-                  <div className="flip-card-inner">
-                    <div className="flip-card-front">
-                      <h2>India Behavioural Economics Network (IBEN)</h2>
-                    </div>
-                    <div className="flip-card-back">
-                      <p>Text messages and chatbots are efficient means to share health information. But this can easily get overwhelming 
-                        simply because of the sheer number of similar services. The Innovation Network designed interventions to target the 
-                        audience’s behavior from creating trust to using the platform.</p>
-                    </div>
-                  </div>
-                </div>
-               </SwiperSlide>
-               <SwiperSlide>
-                <div className="flip-card">
-                  <div className="flip-card-inner">
-                    <div className="flip-card-front">
-                      <h2>India Behavioural Economics Network (IBEN)</h2>
-                    </div>
-                    <div className="flip-card-back">
-                      <p>Text messages and chatbots are efficient means to share health information. But this can easily get overwhelming 
-                        simply because of the sheer number of similar services. The Innovation Network designed interventions to target the 
-                        audience’s behavior from creating trust to using the platform.</p>
-                    </div>
-                  </div>
-                </div>
-               </SwiperSlide>
-               <SwiperSlide>
-                <div className="flip-card">
-                  <div className="flip-card-inner">
-                    <div className="flip-card-front">
-                      <h2>India Behavioural Economics Network (IBEN)</h2>
-                    </div>
-                    <div className="flip-card-back">
-                      <p>Text messages and chatbots are efficient means to share health information. But this can easily get overwhelming 
-                        simply because of the sheer number of similar services. The Innovation Network designed interventions to target the 
-                        audience’s behavior from creating trust to using the platform.</p>
-                    </div>
-                  </div>
-                </div>
-               </SwiperSlide>
-               <SwiperSlide>
-                <div className="flip-card">
-                  <div className="flip-card-inner">
-                    <div className="flip-card-front">
-                      <h2>India Behavioural Economics Network (IBEN)</h2>
-                    </div>
-                    <div className="flip-card-back">
-                      <p>Text messages and chatbots are efficient means to share health information. But this can easily get overwhelming 
-                        simply because of the sheer number of similar services. The Innovation Network designed interventions to target the 
-                        audience’s behavior from creating trust to using the platform.</p>
-                    </div>
-                  </div>
-                </div>
-               </SwiperSlide> */}
-               {/* <SwiperSlide>
-                 <div className="card">
-                    <h2>India Behavioural Economics Network (IBEN)</h2>
-                 </div>
-               </SwiperSlide>
-               <SwiperSlide>
-                 <div className="card">
-                    <h2>India Behavioural Economics Network (IBEN)</h2>
-                 </div>
-               </SwiperSlide>
-               <SwiperSlide>
-                 <div className="card">
-                    <h2>India Behavioural Economics Network (IBEN)</h2>
-                 </div>
-               </SwiperSlide>
-               <SwiperSlide>
-                 <div className="card">
-                    <h2>India Behavioural Economics Network (IBEN)</h2>
-                 </div>
-               </SwiperSlide> */}
+               
                <SwiperSlide>
                  <a href="https://iben.co.in/" target="_blank"><Image src={iben} boxSize="18vw"></Image></a>
+               </SwiperSlide>
+               <SwiperSlide>
+                 <a href="https://gramalaya.org/" target="_blank"><Image src={gramalaya}  margin="auto"></Image></a>
                </SwiperSlide>
                <SwiperSlide>
                  <a href="https://iben.co.in/" target="_blank"><Image src={iben} boxSize="18vw"></Image></a>
@@ -500,10 +329,11 @@ function App(props: Props) {
                <SwiperSlide>
                  <a href="https://iben.co.in/" target="_blank"><Image src={iben} boxSize="18vw"></Image></a>
                </SwiperSlide>
-               <SwiperSlide>
-                 <a href="https://iben.co.in/" target="_blank"><Image src={iben} boxSize="18vw"></Image></a>
-               </SwiperSlide>
-          </Swiper>
+          </Swiper> */}
+          <Flex width="80%" margin="auto" justifyContent="center" alignItems="center" className="partner-flex">
+            <Box width="45%"><a href="https://iben.co.in/" target="_blank"><Image src={iben} margin="auto" width="60%" height="auto"></Image></a></Box>
+            <Box width="45%"><a href="https://gramalaya.org/" target="_blank"><Image src={gramalaya} width="90%" height="auto" margin="auto"></Image></a></Box>
+          </Flex>
       </section>
       <section id="prev" className="prev">
         <h1>PREVIOUS</h1>
@@ -535,31 +365,23 @@ function App(props: Props) {
               grabCursor: true,
               spaceBetween: 70,
             },
-            // 200: {
-            //   spaceBetween: 50,
-            //   slidesPerView: 3,
-            //   // centeredSlides: true,
-            //   initialSlide: 1,
-            //   effect: "slide",
-            //   loop: false,
-            // }
           }}>
             <SwiperSlide>
-              <h2>UPSKILL</h2>
+              <h2><Image src={upskill} height="8vh" width="auto"></Image></h2>
               <p>Formed with the vision of revolutionizing school level CS education in India, UpSkill worked to introduce robust 
                 Computational Thinking skills at an early age among students. UpSkill organised events, workshops and 
                 discussions to help CS educators get acquainted with efficient pedagogies in the domain, to improve computational 
                 thinking skills among students, and to guide school admins on implementing a coding curriculum.</p>
             </SwiperSlide>
             <SwiperSlide>
-              <h2>STeP</h2>
+              <h2><Image src={step} height="8vh" width="auto"></Image></h2>
               <p>Shaastra Technology & Policy was the first engineering technical fest to venture into the public policy domain by 
                 organizing a Policymaking Challenge. It added a whole new dimension to the quest of creating impact through Shaastra. 
                 Shaastra took to taking up societal challenges and utilise the power of technology and public policy to provide solutions 
                 to the masses.</p>
             </SwiperSlide>
             <SwiperSlide>
-              <h2>RELAUNCH</h2>
+              <h2><Image src={relaunch} height="8vh" width="auto"></Image></h2>
               <p>Shaastra Relaunch aimed at solving the enormous but surmountable problem of helping women professionals to get back to 
                 their careers after a hiatus. With Relaunch, we aspired to be the spark that brings out the dormant skills of women who 
                 have taken a break from their professional careers, dust themselves off and start afresh. </p>
@@ -586,7 +408,7 @@ function App(props: Props) {
             <a href="https://www.instagram.com/shaastra_iitm/?hl=en" target="_blank"><FontAwesomeIcon icon={faInstagram} color="white"></FontAwesomeIcon></a>
             <a href="https://www.facebook.com/Shaastra/" target="_blank"><FontAwesomeIcon icon={faFacebook} color="white"></FontAwesomeIcon></a> 
             <a href="https://in.linkedin.com/company/shaastra-iit-madras" target="_blank"><FontAwesomeIcon icon={faLinkedin} color="white"></FontAwesomeIcon></a></p>
-          <p>Designed by Krithikaa, Webops Team Shaastra <br /> Copyright © 2022 Shaastra</p>
+          <p>Designed by Shaastra Webops 2022 <br /> Mind Trials © All rights reserved</p>
       </section>
     </div>
   );

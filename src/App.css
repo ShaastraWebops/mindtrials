@@ -213,14 +213,26 @@ header a
   font-size: 3vw;
   letter-spacing: 1.5vw;
   text-align: center;
+  margin-top: 8vw;
 }
 .aboutus-info p, .events-info p
 {
-  margin-bottom: 4vw;
+  margin-bottom: 6vw;
   text-align: center;
   font-size: 1.5vw;
 }
-
+.mt 
+{
+  background-image: url("./images/shaastra2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  /* font-weight: 600 !important; */
+  background-size: cover;
+}
+.mt h2 
+{
+  margin-top: 4vw;
+}
 .bs-wrapper-flex
 {
   display: flex;
@@ -269,14 +281,6 @@ header a
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-/* .flip-card:hover .flip-card-inner
-{
-  transform: rotateY(180deg);
-}
-.flip-card-back
-{
-  transform: rotateY(180deg);
-} */
 .flip-card a
 {
   color: black;
@@ -295,21 +299,6 @@ header a
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
-/* .bs-wrapper-flex::-webkit-scrollbar
-{
-  width: 6px;
-  height: 6px;
-  border-radius: 25px;
-}
-.bs-wrapper-flex::-webkit-scrollbar-track
-{
-  background-color: transparent;
-}
-.bs-wrapper-flex::-webkit-scrollbar-thumb
-{
-  border-radius: 12px;
-  background-color: rgb(34, 38, 73);
-} */
 
 .events-info
 {
@@ -559,7 +548,7 @@ header a
   width: 22vw;
   /* height: 300px; */
   /* height: fit-content; */
-  height: 48vh;
+  height: 50vh;
   background-color: rgb(198, 219, 226);
   display: flex;
   flex-direction: column;
@@ -576,7 +565,7 @@ header a
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 80vh;
+  height: 90vh;
   /* background-color: white; */
   margin: auto;
   padding-top: 20vh;
@@ -991,11 +980,18 @@ header a
  {
    margin-bottom: 0% !important;
  }
- /* .partners .swiper-wrapper
+ .partner-flex 
  {
-   width: 80vw;
-   justify-content: center;
- } */
+   flex-direction: column;
+   width: fit-content !important;
+   height: 60vh !important;
+   justify-content: space-evenly !important;
+ }
+ .partner-flex img 
+ {
+   height: auto !important;
+   width: 100% !important;
+ }
  .partners .chakra-image
  {
    width: 200px;
@@ -1022,7 +1018,7 @@ header a
   .prev h1:last-child
   {
     position: absolute;
-    top: 20%;
+    top: 23%;
     left: 5%;
   }
   .contact > p:first-child
