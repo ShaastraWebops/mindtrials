@@ -265,7 +265,7 @@ function App(props: Props) {
               be implemented in the real world and tested for their efficacy. <br /><br />
               Organized in collaboration with the India Behavioural Economics Network (IBEN), a leading behavioural science organization 
               in India, the programme shall focus on bringing together students and professionals passionate about this field to innovate 
-              and create practical solutions in our three focus sectors: <b>FITNESS</b>, <b>SANITATION</b> and <b>ROAD SAFETY</b>. <br /><br /> 
+              and create practical solutions in our three focus sectors: <b>NUTRITION</b>, <b>SANITATION</b> and <b>ROAD SAFETY</b>. <br /><br /> 
               The winners of the competition would not only get to see their suggestions implemented in real-time but will also be invited 
               to Shaastra 2022 to present their solutions to the industry, academia and general public. </p>
               <Flex flexDirection="column" className="competition-pts" justifyContent="space-between" margin="4vw 0" width="34vw">
