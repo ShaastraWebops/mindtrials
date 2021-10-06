@@ -824,6 +824,130 @@ header a
    height: 40vh !important;
  }
 }
+@media screen and (max-width: 800px)
+{
+  .flip-card, .two .flip-card, .flip-card-inner
+ {
+   height: 40vh !important;
+   /* font-size: 3vw !important; */
+   width: 80%;
+   border-radius: 0%;
+   margin: auto ;
+   margin-bottom: 10px;
+   text-align: center;
+ }
+ .bs-wrapper-flex
+ {
+   width: 100vw;
+   height: fit-content;
+   flex-direction: column;
+ }
+ .three
+  {
+    margin: 0;
+  }
+  .theme-reveal
+  {
+    height: 250vh;
+    padding-top: 0%;
+  }
+  .theme-reveal h2 
+  {
+    margin-top: 20px;
+    padding-top: 0%;
+  }
+  .competition h2
+ {
+   margin-top: 15vh;
+ }
+ .competition p 
+ {
+   width: 90%;
+   text-align: center;
+ }
+ .competition-flex 
+ {
+   flex-direction: column;
+   align-items: center;
+ }
+ .competition-pts
+ {
+   height: 100vh;
+   width: fit-content !important;
+   margin: auto;
+   margin-top: 5vh !important;
+ }
+ .competition-pts div 
+ {
+   font-size: 3vw;
+   width: 60vw;
+ }
+ .timeline-wrapper, .timeline
+ {
+   flex-direction: column;
+   text-align: center;
+   margin-top: 20px;
+   align-items: center;
+   margin-bottom: 4vh;
+   height: 100vh;
+   width: 80vw !important;
+ }
+ /* .timeline
+ {
+   flex-direction: row !important;
+ } */
+ .timeline p 
+ {
+   font-size: 2.6vw !important;
+ }
+ .timeline-wrapper::after
+ {
+   background-color: transparent;
+ }
+ /* .timeline, .timeline-date
+ {
+   width: fit-content;
+   margin: auto;
+ } */
+ .timeline-date
+ {
+   width: 75vw !important;
+   margin: auto;
+   padding: 10px;
+ }
+ .prev .swiper-slide
+ {
+   width: 65vw !important;
+   height: 55vh;
+  }
+  .prev .swiper-container
+  {
+    width: 80vw !important;
+    padding-top: 5vh !important;
+    height: 65vh;
+  }
+  .prev
+  {
+    margin-bottom: 25vw;
+    position: relative;
+    height: fit-content;
+  }
+  .contact
+  {
+    height: 120vh;
+    padding-bottom: 10px;
+  }
+  .contact p, .contact div, .contact p:last-child
+  {
+    font-size: 3vw;
+  }
+  .contact-bg
+  {
+    top: 20%;
+    height: 100vh;
+  }
+}
+
 
 @media screen and (max-width: 550px)
 {
@@ -914,6 +1038,11 @@ header a
    justify-self: center;
    align-self: center;
  }
+ .theme-reveal
+ {
+   height: 150vh;
+   padding-top: 40px;
+ }
  /* .theme-pic-flex
  {
    height: 100vh !important;
@@ -952,6 +1081,7 @@ header a
    align-items: center;
    margin-bottom: 4vh;
    width: 80vw !important;
+   height: 50vh;
  }
  /* .timeline
  {
@@ -1005,6 +1135,7 @@ header a
   .prev .swiper-container
   {
     width: 100vw !important;
+    
   }
   .prev
   {
@@ -1018,7 +1149,7 @@ header a
   .prev h1:last-child
   {
     position: absolute;
-    top: 23%;
+    top: 10%;
     left: 5%;
   }
   .contact > p:first-child
