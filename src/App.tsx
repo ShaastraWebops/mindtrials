@@ -267,7 +267,7 @@ function App(props: Props) {
               in India, the programme shall focus on bringing together students and professionals passionate about this field to innovate 
               and create practical solutions in our three focus sectors: <b>NUTRITION</b>, <b>SANITATION</b> and <b>ROAD SAFETY</b>. <br /><br /> 
               The winners of the competition would not only get to see their suggestions implemented in real-time but will also be invited 
-              to Shaastra 2022 to present their solutions to the industry, academia and general public. </p>
+              to Shaastra 2022 to present their solutions to the industry, academia and general public.  </p>
               <Flex flexDirection="column" className="competition-pts" justifyContent="space-between" margin="4vw 0" width="34vw">
                   <div>Behavioural Design introductory Workshop</div>
                   <div>Two-round case-study competition</div>
