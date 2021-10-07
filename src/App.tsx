@@ -258,6 +258,7 @@ function App(props: Props) {
           </Flex>
         </div>
         <div className="competition">
+          
           <h2>NUDGE-IT</h2>
           <Flex justifyContent="space-between" className="competition-flex">
             <p>Staying committed to our mission of using Behavioural insights for the public good, Mind Trials invites you to join us in 
