@@ -954,11 +954,6 @@ header a
  {
    background-color: transparent;
  }
- /* .timeline, .timeline-date
- {
-   width: fit-content;
-   margin: auto;
- } */
  .timeline-date
  {
    width: 75vw !important;
@@ -1034,10 +1029,6 @@ header a
     font-size: 2vw;
     height: 12vh !important;
   }
-  /* .header-image .image 
-  {
-    size: ;
-  } */
   .header-menu
   {
     padding: 0;
@@ -1105,10 +1096,6 @@ header a
    height: 150vh;
    padding-top: 40px;
  }
- /* .theme-pic-flex
- {
-   height: 100vh !important;
- } */
  .surveySwiper, .theme-pic-flex
  {
    height: 60vh !important;
@@ -1153,11 +1140,6 @@ header a
  {
    background-color: transparent;
  }
- /* .timeline, .timeline-date
- {
-   width: fit-content;
-   margin: auto;
- } */
  .timeline-date
  {
    width: 75vw !important;

@@ -7,8 +7,6 @@ import shaastraLogo from "./images/shaastraLogo.svg"
 import postOne from "./images/Slide2 .png"
 import postTwo from "./images/Slide4 .png"
 import postThree from "./images/Slide6 .png"
-// import brainLeft from "./images/loadBrainLeft.svg"
-// import brainRight from "./images/loadBrainRight.svg"
 import iben from "./images/IBEN logo.jpeg"
 import left from "./images/loadLeft.jpg"
 import right from "./images/loadRight.jpg"
@@ -258,7 +256,7 @@ function App(props: Props) {
           </Flex>
         </div>
         <div className="competition">
-          
+
           <h2>NUDGE-IT</h2>
           <Flex justifyContent="space-between" className="competition-flex">
             <p>Staying committed to our mission of using Behavioural insights for the public good, Mind Trials invites you to join us in 
