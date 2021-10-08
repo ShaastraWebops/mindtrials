@@ -1,3 +1,6 @@
+@viewport{
+  width: device-width;
+}
 html{
   margin: 0%;
   padding: 0%;
@@ -124,6 +127,18 @@ h1
   color: rgb(23, 16, 53);
 }
 
+/* @media screen and (min-width: 2500px)
+{
+  header a 
+  {
+    font-size: 0.7vw;
+  }
+  .header-image .chakra-image
+  {
+    width: 15vw !important;
+    height: auto;
+  }
+} */
 
 #landing
 {
@@ -587,7 +602,7 @@ header a
   color: white;
   position: relative;
   margin: auto;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -598,7 +613,7 @@ header a
   position: absolute;
   width: 110vw;
   left: -5vw;
-  top: 50vh;
+  top: 70vh;
   height: 80vh;
   z-index: -1;
   content: "";
@@ -662,8 +677,14 @@ header a
   z-index: -2;
   overflow-x: hidden;
 }
-
-@media screen and (max-width: 1500px)
+@media screen and (max-width:1100px)
+{
+  .contact-bg
+  {
+    top: 50%;
+  }
+}
+@media screen and (max-width: 1000px)
 {
   .aboutus-info h2, .events-info h2
   {
@@ -679,7 +700,7 @@ header a
   }
   header 
   {
-    font-size: 2vw;
+    font-size: 0.5em;
     height: 21vh !important;
     flex-direction: column;
     justify-content: center !important;
@@ -690,7 +711,7 @@ header a
   }
   .header-image .chakra-image
   {
-    width: 20vw;
+    width: 8em !important;
     height: auto;
   }
   .header-menu
@@ -762,7 +783,7 @@ header a
   }
   .competition-pts
   {
-    height: 60vh;
+    height: 40vh;
     margin: auto 0 !important;
   }
   .timeline p
@@ -813,7 +834,7 @@ header a
   }
   .contact-bg
   {
-    top: 40%;
+    top: 30%;
     left: -50%;
     width: 200vw;
     height: 100vh;
@@ -827,7 +848,18 @@ header a
     right: 0vw ;
   }
 }
+@media screen and (max-width: 900px)
+{
+  .contact h1 
+  {
 
+    margin-bottom: 140px;
+  }
+  .contact-bg
+  {
+    top: 30%;
+  }
+}
 @media screen and (max-width: 850px)
 {
   .prev .swiper-slide
@@ -859,15 +891,15 @@ header a
  }
  .contact
   {
-    height: 50vh;
+    height: 160vh;
     padding-bottom: 10px;
   }
   .contact-bg
   {
-    top: 40%;
+    top: 25%;
     left: -50%;
     width: 200vw;
-    height: 50vh;
+    height: 140vh;
   }
 }
 @media screen and (max-width: 750px)
@@ -1003,9 +1035,15 @@ header a
     width: 200vw;
   }
 }
+/* @media screen and (max-width: 700px)
+{
+  .contact
+  {
+    height: 500vh;
+  }
+} */
 
-
-@media screen and (max-width: 550px)
+@media screen and (max-width: 700px)
 {
   .body
   {

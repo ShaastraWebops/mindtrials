@@ -2,7 +2,6 @@ import { setTimeout } from "timers";
 
 
 export const script = () => {
-    document.title = "MindTrials"
     document.addEventListener("scroll", () => {
         var header: HTMLElement = document.querySelector("header")!;
         var height = window.innerHeight;
@@ -24,10 +23,6 @@ const removeLeft = () => {
     slideBg.remove()
 }
 
-// const removeRight = () => {
-//     var slideBg: HTMLElement = document.querySelector(".load-slide-right")!;
-//     slideBg.remove()
-// }
 
 export const load = () => {
     window.onload = () => {

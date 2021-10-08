@@ -8,8 +8,8 @@ import postOne from "./images/Slide2 .png"
 import postTwo from "./images/Slide4 .png"
 import postThree from "./images/Slide6 .png"
 import iben from "./images/IBEN logo.jpeg"
-import left from "./images/loadLeft.jpg"
-import right from "./images/loadRight.jpg"
+import left from "./images/loadLeft.webp"
+import right from "./images/loadRight.webp"
 import christina from "./images/christina.png"
 import junofy from "./images/junofy.png"
 import upskill from "./images/UpSkill Logo vector.png"
@@ -42,7 +42,7 @@ function App(props: Props) {
     <div className="body">
       <Particles id="particles-js" params={particlesCOnfig} />
       <Flex position="absolute" top="0" left="0" width="100vw" height="100vh" alignItems="center" className="load-flex" zIndex="10">
-        <div className="load-slide-left"><Image src={left} position="absolute" objectFit="contain" width="50vw" height="100vh" left="10vw"></Image></div>
+      <div className="load-slide-left"><Image src={left} position="absolute" objectFit="contain" width="50vw" height="100vh" left="10vw"></Image></div>
         <div className="load-slide-right"><Image src={right} width="50vw" height="100vh" objectFit="contain" position="absolute" right="10vw"></Image>
         <a href='https://www.freepik.com/vectors/school'>School vector created by macrovector_official - www.freepik.com</a></div>
       </Flex>
