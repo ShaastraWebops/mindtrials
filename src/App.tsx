@@ -16,6 +16,7 @@ import upskill from "./images/UpSkill Logo vector.png"
 import step from "./images/STeP_Logo_Black-01.png"
 import relaunch from "./images/relaunch.png"
 import gramalaya from "./images/gramalaya.png"
+import csbc from "./images/csbc.png"
 
 import {Flex, Image, Grid, GridItem, Box} from "@chakra-ui/react"
 
@@ -333,8 +334,9 @@ function App(props: Props) {
                </SwiperSlide>
           </Swiper> */}
           <Flex width="80%" margin="auto" justifyContent="center" alignItems="center" className="partner-flex">
-            <Box width="45%"><a href="https://iben.co.in/" target="_blank"><Image src={iben} margin="auto" width="60%" height="auto"></Image></a></Box>
-            <Box width="45%"><a href="https://gramalaya.org/" target="_blank"><Image src={gramalaya} width="90%" height="auto" margin="auto"></Image></a></Box>
+            <Box width="45%"><a href="https://iben.co.in/" className="partner-flex-out" target="_blank"><Image src={iben} margin="auto" width="60%" height="auto"></Image></a></Box>
+            <Box width="45%"><a href="https://gramalaya.org/" className="partner-flex-out" target="_blank"><Image src={gramalaya} width="90%" height="auto" margin="auto"></Image></a></Box>
+            <Box width="45%"><a href="https://forms.gle/ge15CUNHHh9RknLeA" className="partner-flex-out" target="_blank"><Image src={csbc} width="60%" height="auto" margin="auto"></Image></a></Box>
           </Flex>
       </section>
       <section id="prev" className="prev">

@@ -537,6 +537,12 @@ header a
 {
   padding: 50px;
 }
+.partner-flex-out
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* .partners .flip-card
 {
   border-radius: 0%;
