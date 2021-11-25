@@ -7,11 +7,9 @@ import shaastraLogo from "./images/shaastraLogo.svg"
 import postOne from "./images/Slide2 .png"
 import postTwo from "./images/Slide4 .png"
 import postThree from "./images/Slide6 .png"
-// import brainLeft from "./images/loadBrainLeft.svg"
-// import brainRight from "./images/loadBrainRight.svg"
 import iben from "./images/IBEN logo.jpeg"
-import left from "./images/loadLeft.jpg"
-import right from "./images/loadRight.jpg"
+import left from "./images/loadLeft.webp"
+import right from "./images/loadRight.webp"
 import christina from "./images/christina.png"
 import junofy from "./images/junofy.png"
 import upskill from "./images/UpSkill Logo vector.png"
@@ -45,15 +43,15 @@ function App(props: Props) {
     <div className="body">
       <Particles id="particles-js" params={particlesCOnfig} />
       <Flex position="absolute" top="0" left="0" width="100vw" height="100vh" alignItems="center" className="load-flex" zIndex="10">
-        <div className="load-slide-left"><Image src={left} position="absolute" objectFit="contain" width="50vw" height="100vh" left="10vw"></Image></div>
+      <div className="load-slide-left"><Image src={left} position="absolute" objectFit="contain" width="50vw" height="100vh" left="10vw"></Image></div>
         <div className="load-slide-right"><Image src={right} width="50vw" height="100vh" objectFit="contain" position="absolute" right="10vw"></Image>
         <a href='https://www.freepik.com/vectors/school'>School vector created by macrovector_official - www.freepik.com</a></div>
       </Flex>
       <header hidden>
-        <Flex width="20vw" justifyContent="space-between" alignItems="center" className="header-image" padding="1vw" marginLeft="2vw">
-          <a href="#landing"><Image src={mtLogo} boxSize="5vw" width="fit-content"></Image></a>
+        <Flex width="20vw" justifyContent="space-between" alignItems="center" className="header-image" padding="0.5vw" marginLeft="2vw">
+          <a href="#landing"><Image src={mtLogo} boxSize="3.5vw" width="fit-content"></Image></a>
         </Flex>
-        <Flex width="80vw" justifyContent="space-between" alignItems="center" padding="1vw 2vw"  className="header-menu">
+        <Flex width="80vw" justifyContent="space-between" alignItems="center" padding="0vw 2vw"  className="header-menu">
           <a href="#aboutus">ABOUT US</a>
           <a href="#events">EVENTS</a>
           <a href="#partners">PARTNERS</a>
@@ -259,6 +257,7 @@ function App(props: Props) {
           </Flex>
         </div>
         <div className="competition">
+
           <h2>NUDGE-IT</h2>
           <Flex justifyContent="space-between" className="competition-flex">
             <p>Staying committed to our mission of using Behavioural insights for the public good, Mind Trials invites you to join us in 
@@ -266,9 +265,9 @@ function App(props: Props) {
               be implemented in the real world and tested for their efficacy. <br /><br />
               Organized in collaboration with the India Behavioural Economics Network (IBEN), a leading behavioural science organization 
               in India, the programme shall focus on bringing together students and professionals passionate about this field to innovate 
-              and create practical solutions in our three focus sectors: <b>FITNESS</b>, <b>SANITATION</b> and <b>ROAD SAFETY</b>. <br /><br /> 
+              and create practical solutions in our three focus sectors: <b>NUTRITION</b>, <b>SANITATION</b> and <b>ROAD SAFETY</b>. <br /><br /> 
               The winners of the competition would not only get to see their suggestions implemented in real-time but will also be invited 
-              to Shaastra 2022 to present their solutions to the industry, academia and general public. </p>
+              to Shaastra 2022 to present their solutions to the industry, academia and general public.  </p>
               <Flex flexDirection="column" className="competition-pts" justifyContent="space-between" margin="4vw 0" width="34vw">
                   <div>Behavioural Design introductory Workshop</div>
                   <div>Two-round case-study competition</div>
@@ -301,42 +300,9 @@ function App(props: Props) {
       </section>
       <section id="partners" className="partners">
           <h1>OUR PARTNERS</h1>
-          {/* <Swiper
-            slidesPerView={3}
-            loop={true}
-            centeredSlides={true}
-            // autoplay={{delay: 600}} 
-            className="partner-swiper"
-            breakpoints={
-              {
-                750: {
-                  slidesPerView: 3,
-                  spaceBetween: 10,
-                },
-                200: {
-                  slidesPerView: 1,
-                  spaceBetween: 50,
-                  centeredSlides: true,
-                }
-              }
-            }>
-               
-               <SwiperSlide>
-                 <a href="https://iben.co.in/" target="_blank"><Image src={iben} boxSize="18vw"></Image></a>
-               </SwiperSlide>
-               <SwiperSlide>
-                 <a href="https://gramalaya.org/" target="_blank"><Image src={gramalaya}  margin="auto"></Image></a>
-               </SwiperSlide>
-               <SwiperSlide>
-                 <a href="https://iben.co.in/" target="_blank"><Image src={iben} boxSize="18vw"></Image></a>
-               </SwiperSlide>
-               <SwiperSlide>
-                 <a href="https://iben.co.in/" target="_blank"><Image src={iben} boxSize="18vw"></Image></a>
-               </SwiperSlide>
-          </Swiper> */}
           <Flex width="80%" margin="auto" justifyContent="center" alignItems="center" className="partner-flex">
-            <Box width="45%"><a href="https://iben.co.in/" target="_blank" className="partner-flex-out"><Image src={iben} margin="auto" width="60%" height="auto"></Image></a></Box>
-            <Box width="45%"><a href="https://gramalaya.org/" target="_blank" className="partner-flex-out"><Image src={gramalaya} width="90%" height="auto" margin="auto"></Image></a></Box>
+            <Box width="45%"><a href="https://iben.co.in/" className="partner-flex-out" target="_blank"><Image src={iben} margin="auto" width="60%" height="auto"></Image></a></Box>
+            <Box width="45%"><a href="https://gramalaya.org/" className="partner-flex-out" target="_blank"><Image src={gramalaya} width="90%" height="auto" margin="auto"></Image></a></Box>
             <Box width="45%"><a href="https://forms.gle/ge15CUNHHh9RknLeA" className="partner-flex-out" target="_blank"><Image src={csbc} width="60%" height="auto" margin="auto"></Image></a></Box>
           </Flex>
       </section>
