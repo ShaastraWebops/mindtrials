@@ -512,22 +512,6 @@ header a
   text-align: center;
   margin: auto;
 }
-/* .partners .card 
-{
-  height: fit-content;
-  width: 20vw;
-  background-color: rgb(23, 16, 53);
-  color: white;
-  padding: 20px;
-  display: flex;
-  border-radius: 25px;
-  justify-content: center;
-  align-items: center;
-} */
-/* .partners .flip-card, .partners .flip-card-inner
-{
-  height: fit-content;
-} */
 .partners .swiper-slide
 {
   text-align: center;
