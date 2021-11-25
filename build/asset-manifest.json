@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.d7ecf6c6.chunk.css",
-    "main.js": "/static/js/main.be4a7259.chunk.js",
-    "main.js.map": "/static/js/main.be4a7259.chunk.js.map",
+    "main.css": "/static/css/main.cd7e355a.chunk.css",
+    "main.js": "/static/js/main.440104a9.chunk.js",
+    "main.js.map": "/static/js/main.440104a9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4a45e60b.js",
     "runtime-main.js.map": "/static/js/runtime-main.4a45e60b.js.map",
     "static/css/2.134a2c45.chunk.css": "/static/css/2.134a2c45.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.4ffa378e.chunk.js.map": "/static/js/2.4ffa378e.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.134a2c45.chunk.css.map": "/static/css/2.134a2c45.chunk.css.map",
-    "static/css/main.d7ecf6c6.chunk.css.map": "/static/css/main.d7ecf6c6.chunk.css.map",
+    "static/css/main.cd7e355a.chunk.css.map": "/static/css/main.cd7e355a.chunk.css.map",
     "static/js/2.4ffa378e.chunk.js.LICENSE.txt": "/static/js/2.4ffa378e.chunk.js.LICENSE.txt",
     "static/media/IBEN logo.6b2bc962.jpeg": "/static/media/IBEN logo.6b2bc962.jpeg",
     "static/media/STeP_Logo_Black-01.6f9c0c5d.png": "/static/media/STeP_Logo_Black-01.6f9c0c5d.png",
@@ -19,10 +19,11 @@
     "static/media/Slide6 .595091cc.png": "/static/media/Slide6 .595091cc.png",
     "static/media/UpSkill Logo vector.93053deb.png": "/static/media/UpSkill Logo vector.93053deb.png",
     "static/media/christina.c6eb8108.png": "/static/media/christina.c6eb8108.png",
+    "static/media/csbc.8158423f.png": "/static/media/csbc.8158423f.png",
     "static/media/gramalaya.0e871b53.png": "/static/media/gramalaya.0e871b53.png",
     "static/media/junofy.6bc4f36d.png": "/static/media/junofy.6bc4f36d.png",
-    "static/media/loadLeft.b1a98083.jpg": "/static/media/loadLeft.b1a98083.jpg",
-    "static/media/loadRight.f9d3158f.jpg": "/static/media/loadRight.f9d3158f.jpg",
+    "static/media/loadLeft.50323108.webp": "/static/media/loadLeft.50323108.webp",
+    "static/media/loadRight.6955fc14.webp": "/static/media/loadRight.6955fc14.webp",
     "static/media/mtLogo.9acdc781.png": "/static/media/mtLogo.9acdc781.png",
     "static/media/App.css": "/static/media/shaastra2.1e772a1b.png",
     "static/media/relaunch.df7d3ca8.png": "/static/media/relaunch.df7d3ca8.png",
@@ -32,7 +33,7 @@
     "static/js/runtime-main.4a45e60b.js",
     "static/css/2.134a2c45.chunk.css",
     "static/js/2.4ffa378e.chunk.js",
-    "static/css/main.d7ecf6c6.chunk.css",
-    "static/js/main.be4a7259.chunk.js"
+    "static/css/main.cd7e355a.chunk.css",
+    "static/js/main.440104a9.chunk.js"
   ]
 }
