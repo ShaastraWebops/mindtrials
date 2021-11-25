@@ -300,39 +300,6 @@ function App(props: Props) {
       </section>
       <section id="partners" className="partners">
           <h1>OUR PARTNERS</h1>
-          {/* <Swiper
-            slidesPerView={3}
-            loop={true}
-            centeredSlides={true}
-            // autoplay={{delay: 600}} 
-            className="partner-swiper"
-            breakpoints={
-              {
-                750: {
-                  slidesPerView: 3,
-                  spaceBetween: 10,
-                },
-                200: {
-                  slidesPerView: 1,
-                  spaceBetween: 50,
-                  centeredSlides: true,
-                }
-              }
-            }>
-               
-               <SwiperSlide>
-                 <a href="https://iben.co.in/" target="_blank"><Image src={iben} boxSize="18vw"></Image></a>
-               </SwiperSlide>
-               <SwiperSlide>
-                 <a href="https://gramalaya.org/" target="_blank"><Image src={gramalaya}  margin="auto"></Image></a>
-               </SwiperSlide>
-               <SwiperSlide>
-                 <a href="https://iben.co.in/" target="_blank"><Image src={iben} boxSize="18vw"></Image></a>
-               </SwiperSlide>
-               <SwiperSlide>
-                 <a href="https://iben.co.in/" target="_blank"><Image src={iben} boxSize="18vw"></Image></a>
-               </SwiperSlide>
-          </Swiper> */}
           <Flex width="80%" margin="auto" justifyContent="center" alignItems="center" className="partner-flex">
             <Box width="45%"><a href="https://iben.co.in/" className="partner-flex-out" target="_blank"><Image src={iben} margin="auto" width="60%" height="auto"></Image></a></Box>
             <Box width="45%"><a href="https://gramalaya.org/" className="partner-flex-out" target="_blank"><Image src={gramalaya} width="90%" height="auto" margin="auto"></Image></a></Box>
