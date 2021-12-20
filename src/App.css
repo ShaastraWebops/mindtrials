@@ -5,7 +5,7 @@ html{
   margin: 0%;
   padding: 0%;
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   box-sizing: border-box;
@@ -331,13 +331,27 @@ header a
 {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
 }
 .events-info p
 {
   text-align: left;
   width: 70%;
 }
+.video p, .impli-flex p
+{
+  width: 50%;
+  margin-bottom: 0%;
+}
+.impli-intro  
+{
+  text-align: center !important;
+}
+/* .events-info a 
+{
+  border-radius: 25px;
+  background-color: rgb(23, 16, 53) ;
+  padding: "3vw" !important;
+} */
 .mt 
 {
   padding: 4vh 0;
@@ -357,8 +371,13 @@ header a
 {
   margin: auto;
 }
+.events-info h2 
+{
+  margin-top: 0%;
+}
 .theme-reveal
 {
+  padding: 8vh 0;
   height: fit-content;
   justify-content: center;
   align-self: center;
@@ -381,11 +400,11 @@ header a
 {
   text-align: left !important;
 } */
-/* .survey-div
+.survey-div, .competition
 {
-  height: 100vh;
-  padding-top: 15vh;
-} */
+  padding: 8vh 0;
+  margin-bottom: 0%;
+}
 .theme-reveal
 {
   align-self: center;
@@ -410,7 +429,7 @@ header a
 }
 .competition-pts div
 {
-  background-color: lightblue;
+  background-color: #add8e6;
   padding: 20px;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
@@ -425,7 +444,7 @@ header a
   /* text-align: left; */
   margin: 0;
 }
-.competition-pts div:first-child:after, .competition-pts div:nth-child(2)::after, .competition-pts div:nth-child(3)::after
+.competition-pts div:first-child:after, .competition-pts div:nth-child(2)::after, .competition-pts div:nth-child(3)::after, .competition-pts div:nth-child(4)::after
 {
   height: 110%;
   width: 10px;
@@ -435,9 +454,13 @@ header a
   top: 100%;
   left: 50%;
 }
-
-.competition .button
+.impli .swiper-container
 {
+  border-radius: 24px;
+}
+.events-info .button
+{
+  width: fit-content;
   align-self: center;
   /* background-color: #f1cbe8; */
   background-color: #f1cbe8;
@@ -445,7 +468,7 @@ header a
   border-radius: 10px;
   padding: 20px;
 }
-.button a 
+.button a, .link a
 {
   color: black;
 }
@@ -499,7 +522,7 @@ header a
   width: 100vw;
   /* padding: 0 20vw; */
   background-color: rgb(249, 249, 253);
-  padding-top: 20vh;
+  padding-top: 10vh;
   padding-bottom: 10vh;
   margin-top: 15vh;
   margin: auto;
@@ -571,9 +594,9 @@ header a
   height: 90vh;
   /* background-color: white; */
   margin: auto;
-  padding-top: 20vh;
+  padding-top: 10vh;
   /* scroll-snap-align: start; */
-  padding-bottom: 2vh;
+  padding-bottom: 10vh;
 }
 .prev h1:last-child{
   align-self: flex-end;
@@ -586,7 +609,7 @@ header a
   color: white;
   position: relative;
   margin: auto;
-  height: 120vh;
+  /* height: 120vh; */
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -597,7 +620,7 @@ header a
   position: absolute;
   width: 110vw;
   left: -5vw;
-  top: 70vh;
+  top: 30vh;
   height: 80vh;
   z-index: -1;
   content: "";
@@ -661,11 +684,25 @@ header a
   z-index: -2;
   overflow-x: hidden;
 }
-@media screen and (max-width:1100px)
+@media screen and (max-width:1400px)
 {
   .contact-bg
   {
-    top: 50%;
+    top: 40%;
+  }
+  .prev .swiper-slide
+  {
+    /* transform: translateX(15vw) !important; */
+    height: 45vh;
+    width: 30vw !important;
+  }
+  .prev .swiper-slide p 
+  {
+    font-size: 2vw;
+  }
+  .prev .swiper-slide .chakra-image
+  {
+    width: 15vw;
   }
 }
 @media screen and (max-width: 1000px)
@@ -778,6 +815,11 @@ header a
   {
     margin-bottom: 0%;
   }
+  /* .prev .swiper-slide
+  {
+    width: 65vw !important;
+    height: 55vh;
+   } */
  .prev h2, .prev p
   {
     width: 80%;
@@ -792,17 +834,15 @@ header a
   {
     width: 80vw !important;
   }
-  .prev .swiper-slide
-  {
-    /* transform: translateX(15vw) !important; */
-    height: 50vh;
-    width: 60vw !important;
-  }
   .prev .swiper-wrapper
   {
     transform-style: unset !important;
-
   }
+  /* .prevSwiper .swiper-slide .chakra-image
+  {
+    width: 5vw !important;
+    height: auto !important;
+  } */
   .prev 
   {
     padding: 0%;
@@ -994,6 +1034,10 @@ header a
     margin-top: 40px;
     height: fit-content;
   }
+  .prev .swiper-slide .chakra-image
+  {
+    width: 40vw;
+  }
   .contact
   {
     height: 140vh;
@@ -1031,7 +1075,9 @@ header a
 {
   .body
   {
+    width: 100vw !important;
     font-size: 4vw;
+    overflow-x: hidden !important;
   }
   .home-btns .css-1o65u5e
   {
@@ -1048,6 +1094,8 @@ header a
   }
   header 
   {
+    width: 90vw;
+    overflow-x: hidden;
     font-size: 2vw;
     height: 12vh !important;
   }
@@ -1096,6 +1144,11 @@ header a
  {
    font-size: 8vw !important;
  }
+ /* .events-info
+ {
+   width: 100vw;
+   overflow-x: hidden !important;
+ } */
  .bs-wrapper-flex
  {
    width: 100vw;
@@ -1117,15 +1170,29 @@ header a
  {
    height: 150vh;
    padding-top: 40px;
+   padding-bottom: 0%;
  }
- .surveySwiper, .theme-pic-flex
+ .competition
  {
-   height: 60vh !important;
+   padding-top: 0%;
+   padding-bottom: 0%;
+ }
+ .surveySwiper, .theme-pic-flex, .survey-flex .swiper-container
+ {
+   height: 50vh !important;
    margin-bottom: 15vh;
+ }
+ .survey-flex .swiper-container
+ {
+   margin-bottom: 0%;
+ }
+ .survey-flex
+ {
+   height: fit-content !important;
  }
  .competition h2
  {
-   margin-top: 15vh;
+   margin-top: 4vh;
  }
  .competition-flex 
  {
@@ -1134,7 +1201,7 @@ header a
  }
  .competition-pts
  {
-   height: 50vh;
+   height: 55vh;
    width: fit-content !important;
    margin: auto;
    margin-top: 5vh !important;
@@ -1152,7 +1219,7 @@ header a
    align-items: center;
    margin-bottom: 4vh;
    width: 80vw !important;
-   height: 50vh;
+   height: 60vh;
  }
  /* .timeline
  {
@@ -1168,6 +1235,46 @@ header a
    margin: auto;
    padding: 10px;
  }
+ .mt-link a 
+{
+  font-size: 4vw;
+}
+.mt-link
+{
+  margin: auto;
+}
+.impli .swiper-slide img
+{
+  width: 100vw !important;
+}
+  .impli-small-text
+  {
+    font-size: 3.5vw !important;
+  }
+  .impli-flex, .video
+  {
+    flex-direction: column !important;
+  }
+  .impli-flex p
+  {
+    margin-top: 4vh;
+  }
+  .impli-flex.left p 
+  {
+    margin-bottom: 4vh;
+  }
+  .video video, .video > div:first-child
+  {
+    object-fit: cover;
+    width: 80vw;
+    height: 80vw;
+    margin-bottom: 4vh;
+  }
+  .impli-flex img
+  {
+    width: 80vw;
+    height: 80vw;
+  }
  .partners .swiper-slide
  {
    transform: translateX(-15%);
@@ -1196,12 +1303,11 @@ header a
  .prev .swiper-slide
  {
    width: 85vw !important;
-   height: 45vh;
+   height: 60vh;
   }
   .prev .swiper-container
   {
     width: 100vw !important;
-    
   }
   .prev
   {

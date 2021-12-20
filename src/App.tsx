@@ -17,8 +17,23 @@ import step from "./images/STeP_Logo_Black-01.png"
 import relaunch from "./images/relaunch.png"
 import gramalaya from "./images/gramalaya.png"
 import csbc from "./images/csbc.png"
+import gram1 from "./images/gram1.jpeg"
+import gram2 from "./images/gram2.png"
+import gram3 from "./images/gram3.jpg"
+import gram4 from "./images/gram4.jpg"
+import gram5 from "./images/gram5.jpeg"
+import gram6 from "./images/gram6.jpeg"
+import gram7 from "./images/gram7.jpeg"
+import gramSurvey from "./images/gramSurvey.png"
+import gramPlay from "./images/gramPlay.jpeg"
+import gramDemo from "./images/gramDemo.jpeg"
+import gramAward from "./images/gramAward.jpg"
+import barGraph from "./images/barGraph.svg"
+import gramPaintVideo from "./images/video/gramPaint.mp4" 
 
-import {Flex, Image, Grid, GridItem, Box} from "@chakra-ui/react"
+import {Flex, Image, Grid, GridItem, Box, Heading, Text, ChakraProvider} from "@chakra-ui/react"
+import { ChevronRightIcon } from '@chakra-ui/icons';
+import { createBreakpoints } from '@chakra-ui/theme-tools'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faInstagram, faLinkedin, faFacebook} from "@fortawesome/free-brands-svg-icons"
@@ -34,6 +49,13 @@ import {script, load} from "./script"
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, EffectCoverflow, Keyboard, Autoplay]);
 
+const breakpoints = createBreakpoints({
+  sm: '30em',
+  md: '48em',
+  lg: '62em',
+  xl: '80em',
+  '2xl': '96em',
+})
 interface Props {}
 function App(props: Props) {
   script();
@@ -79,7 +101,6 @@ function App(props: Props) {
       </section>
       <section id="aboutus" className="aboutus">
         <h1>ABOUT US</h1>
-        <a href='https://www.freepik.com/vectors/people'>Created by rawpixel.com - www.freepik.com</a>
       </section>
       <section>
         <div className="aboutus-info">
@@ -198,6 +219,8 @@ function App(props: Props) {
       </section>
       <section id="events" className="events">
         <h1>EVENTS</h1>
+        
+        <a href='https://www.freepik.com/vectors/people' target={"_blank"}>Created by rawpixel.com - www.freepik.com</a>
       </section>
       <section className="events-info">
         <div className="survey-div"> 
@@ -211,7 +234,12 @@ function App(props: Props) {
               <em>Find yourself shaking your head in disagreement?</em> <br /><br />
               <em> Or are you curious to know how you often get tricked by your own brain?</em> <br /><br />
               Either way, we ran a survey designed to capture the quirks of human behaviour in a fun, exciting 10-minute experiment. 
-              And here is what we found. </p>
+              And here is what we found. 
+              <br /><br />
+              <div className="button mt-link">
+                <em><a href="https://www.instagram.com/p/CSErBpMo9ar/?utm_source=ig_web_button_share_sheet" target="_blank">Check out our instagram post</a> <ChevronRightIcon></ChevronRightIcon> </em>
+              </div>
+              </p>
               <Swiper 
                 pagination={{clickable: true}}
                 centeredSlides={true}
@@ -249,7 +277,12 @@ function App(props: Props) {
                 This two-hour session on Cognitive Biases also saw the audience engage with <b>Dr. Christina Gravert</b>.
                 The event was concluded with a talk by <b>Dr. Junofy Anto Rozarina</b> and the annoucement of the case study competition.
                 Prefaced by a short segue to the field and its relevance today, the event cemented Mind Trials’ commitment to 
-                popularising the use of Behavioural Science for social good. </p>
+                popularising the use of Behavioural Science for social good. 
+                <br /> <br />
+                <div className="button mt-link">
+                  <em><a href="https://youtu.be/qCEMRPA_tpE" target={"_blank"}>Check out the event</a> <ChevronRightIcon></ChevronRightIcon> </em>
+                </div>
+              </p>
             <Flex width="40%" flexDirection="column" justifyContent="space-between" margin="auto" alignItems="center" height="100%" className="theme-pic-flex">
               <Image src={christina} width="24vw" height="auto" margin="2vh 0"></Image>
               <Image src={junofy} width="24vw" height="auto" margin="2vh 0"></Image>
@@ -267,12 +300,18 @@ function App(props: Props) {
               in India, the programme shall focus on bringing together students and professionals passionate about this field to innovate 
               and create practical solutions in our three focus sectors: <b>NUTRITION</b>, <b>SANITATION</b> and <b>ROAD SAFETY</b>. <br /><br /> 
               The winners of the competition would not only get to see their suggestions implemented in real-time but will also be invited 
-              to Shaastra 2022 to present their solutions to the industry, academia and general public.  </p>
+              to Shaastra 2022 to present their solutions to the industry, academia and general public.  
+              <br /> <br />
+              <div className="button mt-link">
+              <em><a href="https://youtube.com/playlist?list=PLT4Wldw_lvk0wVSDc0z1Q3eIGOFvJs3pa" target="_blank">Check out the workshop</a> <ChevronRightIcon></ChevronRightIcon> </em>
+              </div>
+            </p>
               <Flex flexDirection="column" className="competition-pts" justifyContent="space-between" margin="4vw 0" width="34vw">
                   <div>Behavioural Design introductory Workshop</div>
                   <div>Two-round case-study competition</div>
                   <div>Personalised mentorship for finalists</div>
                   <div>Implementation of winner's solutions</div>
+                  <div>Presentation at Shaastra</div>
               </Flex>
           </Flex>
             <Flex className="timeline-wrapper" justifyContent="space-between" >
@@ -292,10 +331,112 @@ function App(props: Props) {
                     <p>IMPLEMENTATION</p>
                     <p className="timeline-date">Nov 1</p>
                  </Flex>
+                 <Flex flexDirection="column" justifyContent="center" height="20vw" width="15vw"  alignItems="center" className="timeline">
+                    <p>SHAASTRA</p>
+                    <p className="timeline-date">Jan 13 - Jan 16</p>
+                 </Flex>
             </Flex>
             <div className="button">
               <a href="https://dare2compete.com/competition/nudge-it-shaastra-2022-indian-institute-of-technology-iit-madras-194510?lb=olKRCDy" target="_blank">VIEW MORE</a>
               </div>
+            <Box className='impli' marginTop={"10vh"}>
+              <Box position="relative" marginBottom={"2vh"}>
+                <Swiper
+                  slidesPerView={1}
+                  autoplay={{delay: 1500}}
+                >
+                  <SwiperSlide><Image borderRadius={"24px"} width="80vw" height={"80vh"} objectFit={"cover"} src={gram1}></Image></SwiperSlide>
+                  <SwiperSlide><Image borderRadius={"24px"} width="80vw" height="80vh" objectFit={"cover"} src={gram2}></Image></SwiperSlide>
+                  <SwiperSlide><Image borderRadius={"24px"} width="80vw" height="80vh" objectFit={"cover"} src={gram3}></Image></SwiperSlide>
+                  <SwiperSlide><Image borderRadius={"24px"} width="80vw" height="80vh" objectFit={"cover"} src={gram4}></Image></SwiperSlide>
+                  <SwiperSlide><Image borderRadius={"24px"} width="80vw" height="80vh" objectFit={"cover"} src={gram5}></Image></SwiperSlide>
+                  <SwiperSlide><Image borderRadius={"24px"} width="80vw" height="80vh" objectFit={"cover"} src={gram6}></Image></SwiperSlide>
+                  <SwiperSlide><Image borderRadius={"24px"} width="80vw" height="80vh" objectFit={"cover"} src={gram7}></Image></SwiperSlide>
+                </Swiper>
+                <Box zIndex={1} borderRadius={"24px"} position="absolute" top="0" left="0" content="" backgroundColor={"rgba(0, 0, 0, 0.6)"} width="80vw" height="80vh"></Box>
+                <Flex backdropBlur={"30px"} flexDirection={"column"} color="white" zIndex={2} borderRadius={"24px"} position="absolute" top="0" left="0" justifyContent={"center"} alignItems={"center"} width="80vw" height="80vh">
+                  <Heading marginBottom="2vh">Nudge In Action</Heading>
+                  <Flex className='impli-small-text' fontSize={["4vw","1.5vw"]} justifyContent={"center"}><em>the implementation initiative of Mind Trials</em></Flex>
+                </Flex>
+              </Box>
+              <Flex fontWeight={"bold"} width="100%" justifyContent={"flex-end"} color="black" marginBottom={"4vh"}>
+                <div className='link'>
+                  <em> <a href="https://www.instagram.com/p/CXpl4BNPfU3/?utm_source=ig_web_copy_link" target="_blank">Check out our instagram post</a> <ChevronRightIcon></ChevronRightIcon></em>
+                </div>
+              </Flex>
+              <Text backdropBlur={"30px"} position={"relative"} width="90vw" textAlign="center" margin="auto" className='impli-intro'> 
+                  With a goal to ensure better sanitation practices, Mind Trials collaborated with Gramalaya - 
+                  a well accomplished NGO in the realm of sanitation in southern India, having turned villages and 
+                  slums into open-defecation free areas, to implement the solutions from Nudge-It. <br /><br />
+                  '<em><b>Nudge In Action</b></em>', the implementation phase of Nudge-It, kick started in November 2021 by setting up 
+                  nudges to change sanitation behaviour in rural Tamil Nadu. The targeted areas are <em>Vadakku Immanampatti </em> 
+                  and <em>Rajagiri</em> villages near Pudukkottai in Tamil Nadu. In the target areas, behavioural nudges such as 
+                  redesigning toilets and public spaces, audio-visual nudges and empowering community members to lead 
+                  awareness events, were carried out to encourage 100% usage of toilets and sustenance of proper hygiene 
+                  practices.
+                  <br /> <br />
+                  Various behavioral concepts like framing effect, IKEA effect, operant conditioning, etc were employed in the 
+                  interventions.
+              </Text>
+              <Flex flexDirection="row"  width="80vw" justifyContent={"space-between"} alignItems={"center"} className='impli-flex' marginBottom={'4vh'}>
+                <Text>
+                    Statistics of the villages show that around 80% of the men use toilets. We, at Mind Trials, aim to bring
+                    this percentage to 100%. 
+                </Text>
+                <Image src={barGraph} objectFit={"contain"}></Image>
+              </Flex>
+              <Flex width="80vw" justifyContent={"space-between"} alignItems={"center"} className='impli-flex' marginBottom={'4vh'}>
+                  <Image src={gramSurvey} boxSize={"25vw"} objectFit={"cover"}></Image>
+                  <Text width={"50%"} textAlign={"right"}>
+                    A pre-intervention survey was conducted with 95 households to assess the sanitation behaviour of the 
+                    population of the rural areas taken up. Behavioral analysis was done by the participants to develop innovative nudges to change sanitation behaviour.
+                  </Text>
+              </Flex>
+              <Flex width="80vw" justifyContent={"space-between"} alignItems={"center"} className='impli-flex left' marginBottom={'4vh'}>
+                  <Text width={"50%"}>
+                    Street plays were performed by the youth of the rural population, story about a daughter educating her father 
+                    about the aftermath of open defecation. This uses the transtheoretical model of decision making. The model posits that a behaviour change has 6 stages: precontemplation, 
+                    contemplation, preparation, action, maintenance and termination. The play aims to catch the target 
+                    population at the contemplation stage and influence decision makeing heuristics. 
+                  </Text>
+                  <Image src={gramPlay} boxSize={"25vw"} objectFit={"cover"}></Image>
+              </Flex>
+              <Flex width="80vw" justifyContent={"space-between"} alignItems={"center"} className='video' marginBottom={'4vh'}>
+                  <Box boxSize={"30vw"}>
+                    <video src={gramPaintVideo} width="100%" height="100%" muted={true} autoPlay={true} loop={true}>
+                    </video>
+                  </Box>
+                  <Text width={"30%"}>
+                    Toilets were repainted using color psychology. Behavioral assessment showed that the target 
+                    population, mainly men, preferred open defecation because they are more accustomed to the environment of open defecation fields. To mimic the 
+                    environment and make toilets more comfortable for the individuals, toilets were repainted with elements 
+                    of nature. In addition, posters were also painted to act as visual nudges. All this was done with the 
+                    help of community members, thereby employing IKEA effect. 
+                    <br /> <br />
+                    A blackboard is also maintained to display negative information pertaining to toilet usage. 
+                    This intervention acts as a negative reinforcement. As toilet usage increases, the data can be 
+                    swapped to display positive statistics. This also creates the idea that using toilets is the social 
+                    norm.
+                  </Text>
+              </Flex>
+              <Flex width="80vw" justifyContent={"space-between"} alignItems={"center"} className='impli-flex left' marginBottom={'4vh'}>
+                  <Text width={"50%"}>
+                    Demonstrations were also conducted to create awareness about the aftermath of open defecation. 
+                    This uses the theory of reasoned action. The theory states that the intention of behaviour change 
+                    plays a huge role in behavior change. The intervention aims to influence the intention of the 
+                    behaviour change, i.e. using toilets.
+                  </Text>
+                  <Image src={gramDemo} boxSize={"25vw"} objectFit={"cover"}></Image>
+              </Flex>
+              <Flex width="80vw" justifyContent={"space-between"} alignItems={"center"} className='impli-flex' marginBottom={'4vh'}>
+                  <Image src={gramAward} boxSize={"25vw"} objectFit={"cover"}></Image>
+                  <Text width={"50%"} textAlign={"right"}>
+                    Lastly, households that maintained their toilets, each member of the household using the toilet and following proper 
+                    hygiene practices, were awarded. This acts as positive reinforcement, a part of operant conditioning and encourages
+                    them to sustain the behaviour. 
+                  </Text>
+              </Flex>
+            </Box>
         </div>
       </section>
       <section id="partners" className="partners">
@@ -379,7 +520,7 @@ function App(props: Props) {
             <a href="https://www.instagram.com/shaastra_iitm/?hl=en" target="_blank"><FontAwesomeIcon icon={faInstagram} color="white"></FontAwesomeIcon></a>
             <a href="https://www.facebook.com/Shaastra/" target="_blank"><FontAwesomeIcon icon={faFacebook} color="white"></FontAwesomeIcon></a> 
             <a href="https://in.linkedin.com/company/shaastra-iit-madras" target="_blank"><FontAwesomeIcon icon={faLinkedin} color="white"></FontAwesomeIcon></a></p>
-          <p>Designed by Shaastra Webops 2022 <br /> Mind Trials © All rights reserved</p>
+          <p>Designed by Krithikaa, Shaastra Webops 2022 <br /> Mind Trials © All rights reserved</p>
       </section>
     </div>
   );
